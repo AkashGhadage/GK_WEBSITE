@@ -34,12 +34,15 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 h-[80px] border-b border-[#333] shadow-xl bg-[rgb(48,62,73)]">
+    // <header className="fixed inset-x-0 top-0 z-50 h-[80px] border-b border-[#333] shadow-xl bg-[rgb(48,62,73)]">
+      
+    // AFTER
+    <header className="w-full h-[80px] border-b border-[#333] shadow-xl bg-[rgb(48,62,73)]">
       <div className="mx-auto flex h-full max-w-6xl items-center justify-between px-4 lg:px-6 text-[#e5e5e5]">
         {/* Left: Logo + prices */}
         <div className="flex items-center gap-4 lg:gap-6">
           <div className="text-2xl lg:text-3xl font-serif tracking-[0.3em] text-[rgb(207,160,79)]">
-            GK GOLD
+            GK 
           </div>
 
           <div className="hidden md:flex items-center gap-4 rounded-lg bg-black/30 px-4 py-2 border border-[#404040]">

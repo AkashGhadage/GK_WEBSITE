@@ -18,12 +18,10 @@ const Contact = () => {
   const SCRIPT_URL =
     "https://script.google.com/macros/s/AKfycbxC3fzT_HAJNQkUyAkSkJ_fH7_vlPTrN7KExXuvcebOcPQgEl3FfOe12NPJ1E5XJJMs/exec";
 
-  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
 
     if (name === "state") {
-      // Reset city when state changes
       setFormData({
         ...formData,
         state: value,
@@ -37,7 +35,6 @@ const Contact = () => {
     }
   };
 
-  // Handle form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("FORM DATA:", formData);
@@ -72,20 +69,21 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="w-full grid grid-cols-1 md:grid-cols-2"
-      style={{ height: "calc(100vh + 35vh)" }} 
-    >
-      {/* LEFT SIDE – FORM (UNCHANGED) */}
-      <div className="bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center px-4">
-        <div className="w-full max-w-4xl bg-white rounded-2xl shadow-xl p-8 md:p-12 overflow-hidden">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl font-bold text-gray-900">Get in Touch</h2>
-            <p className="text-gray-500 mt-2">
+    <div className="w-full min-h-[calc(100vh-80px)] bg-gray-100 flex flex-col md:flex-row">
+      {/* LEFT SIDE – FORM (55%) */}
+      <div className="w-full md:w-[55%] flex items-center justify-center px-4 py-10">
+        <div className="w-full max-w-3xl bg-white rounded-2xl shadow-xl p-8 md:p-10">
+          {/* Header */}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-wide">
+              Get in Touch
+            </h2>
+            <p className="text-gray-500 mt-2 text-sm md:text-base">
               We'd love to hear from you. Please fill out the form below.
             </p>
           </div>
 
+          {/* Status message */}
           {status && (
             <div
               className={`mb-6 p-4 rounded-lg text-center font-medium border ${
@@ -98,7 +96,7 @@ const Contact = () => {
             </div>
           )}
 
-          {/* 👇 YOUR FORM – EXACTLY SAME */}
+          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-7">
             {/* Row 1 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -113,7 +111,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isLoading}
-                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 text-black focus:border-black focus:ring-2 focus:ring-black/20"
+                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 text-black focus:border-[rgb(48,62,73)] focus:ring-2 focus:ring-[rgb(48,62,73)]/30"
                 />
               </div>
 
@@ -128,7 +126,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isLoading}
-                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 text-black focus:border-black focus:ring-2 focus:ring-black/20"
+                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 text-black focus:border-[rgb(48,62,73)] focus:ring-2 focus:ring-[rgb(48,62,73)]/30"
                 />
               </div>
             </div>
@@ -146,7 +144,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isLoading}
-                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 text-black focus:border-black focus:ring-2 focus:ring-black/20"
+                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 text-black focus:border-[rgb(48,62,73)] focus:ring-2 focus:ring-[rgb(48,62,73)]/30"
                 />
               </div>
 
@@ -160,7 +158,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isLoading}
-                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 bg-white text-black focus:border-black focus:ring-2 focus:ring-black/20"
+                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 bg-white text-black focus:border-[rgb(48,62,73)] focus:ring-2 focus:ring-[rgb(48,62,73)]/30"
                 >
                   <option value="">Select Service</option>
                   <option>Gold Jewellery</option>
@@ -183,7 +181,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isLoading}
-                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 bg-white text-black focus:border-black focus:ring-2 focus:ring-black/20"
+                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 bg-white text-black focus:border-[rgb(48,62,73)] focus:ring-2 focus:ring-[rgb(48,62,73)]/30"
                 >
                   <option value="">Select State</option>
                   {Object.keys(statesWithCities).map((state) => (
@@ -202,7 +200,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={!formData.state || isLoading}
-                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 bg-white text-black focus:border-black focus:ring-2 focus:ring-black/20"
+                  className="h-[46px] w-full rounded-md border border-gray-300 px-4 bg-white text-black focus:border-[rgb(48,62,73)] focus:ring-2 focus:ring-[rgb(48,62,73)]/30"
                 >
                   <option value="">Select City</option>
                   {formData.state &&
@@ -225,20 +223,22 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 disabled={isLoading}
-                className="w-full rounded-md border border-gray-300 px-4 py-3 text-black focus:border-black focus:ring-2 focus:ring-black/20 resize-none"
+                className="w-full rounded-md border border-gray-300 px-4 py-3 text-black focus:border-[rgb(48,62,73)] focus:ring-2 focus:ring-[rgb(48,62,73)]/30 resize-none"
               />
             </div>
 
             {/* Button */}
-            <div className="text-center pt-6">
+            <div className="text-center pt-4">
               <button
                 type="submit"
                 disabled={isLoading}
-                className={`px-12 py-3 rounded-full font-medium transition ${
-                  isLoading
-                    ? "bg-gray-400 text-white"
-                    : "bg-black text-white hover:bg-gray-900"
-                }`}
+                className={`px-12 py-3 rounded-full font-semibold tracking-wide
+                            transition-all duration-300 shadow-md hover:shadow-lg
+                            ${
+                              isLoading
+                                ? "bg-gray-400 text-white cursor-not-allowed"
+                                : "bg-[rgb(48,62,73)] text-white border border-[rgb(207,160,79)] hover:bg-[rgb(207,160,79)] hover:text-black"
+                            }`}
               >
                 {isLoading ? "Sending..." : "Submit Message"}
               </button>
@@ -247,17 +247,17 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* RIGHT SIDE – IMAGE */}
-      <div className="hidden md:block relative h-full">
+      {/* RIGHT SIDE – IMAGE (45%) */}
+      <div className="w-full md:w-[45%] relative hidden md:block">
         <img
           src="/contact-image.jpg"
           alt="Contact"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
     </div>
-  );  
+  );
 };
 
 export default Contact;
