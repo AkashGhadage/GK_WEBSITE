@@ -1,19 +1,15 @@
 import "./App.css";
-
-// Layout
 import Navbar from "./Masters/NavBar/NavBar";
 import AppRoutes from "./Routes/routes";
 
 function App() {
   return (
     <>
-      {/* Sticky Navbar */}
-      <div className="sticky top-0 z-50">
-        <Navbar />
+      <Navbar />
+      {/* Push content below 80px navbar */}
+      <div className="pt-[80px]">
+        <AppRoutes />
       </div>
-
-      {/* App Routes */}
-      <AppRoutes />
     </>
   );
 }
