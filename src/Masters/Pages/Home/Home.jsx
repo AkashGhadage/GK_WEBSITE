@@ -1,7 +1,7 @@
 import React from "react";
 
-const AllJewellery = () => {
+const Home = () => {
   return <div>AllJewellery Page</div>;
 };
 
-export default AllJewellery;
+export default Home;

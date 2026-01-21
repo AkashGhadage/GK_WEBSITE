@@ -1,7 +1,7 @@
 import React from "react";
 
-const Earrings = () => {
+const Blogs = () => {
   return <div>Earrings Page</div>;
 };
 
-export default Earrings;
+export default Blogs;

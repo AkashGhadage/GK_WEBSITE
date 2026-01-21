@@ -1,7 +1,7 @@
 import React from "react";
 
-const Diamonds = () => {
+const Gallary = () => {
   return <div>Diamonds page</div>;
 };
 
-export default Diamonds;
+export default Gallary;

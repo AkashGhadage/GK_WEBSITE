@@ -1,7 +1,7 @@
 import React from "react";
 
-const DailyWear = () => {
+const Services = () => {
   return <div>DailyWear Page</div>;
 };
 
-export default DailyWear;
+export default Services;
