@@ -4,10 +4,8 @@ import About from "../Masters/Pages/About/About";
 import Services from "../Masters/Pages/Services/Services";
 import Gallary from "../Masters/Pages/Gallary/Gallary";
 import Blogs from "../Masters/Pages/Blogs/Blogs";
+import BlogDetails from "../Masters/Pages/Blogs/BlogDetails";
 import Contact from "../Masters/Pages/Contact/Contact";
-
-// Pages
-
 
 const AppRoutes = () => {
   return (
@@ -17,6 +15,8 @@ const AppRoutes = () => {
       <Route path="/services" element={<Services />} />
       <Route path="/gallary" element={<Gallary />} />
       <Route path="/blogs" element={<Blogs />} />
+      {/* 👇 this MUST exist */}
+      <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
