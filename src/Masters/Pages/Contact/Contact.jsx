@@ -96,23 +96,24 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-rose-50/50 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="relative max-w-6xl mx-auto">
+      <div className="relative max-w-5xl mx-auto">
         {/* Hero Section - meaningful copy */}
-        <div className="text-center mb-10 lg:mb-12">
-          <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-amber-700 uppercase mb-2">
+        <div className="text-center mb-12">
+          <p className="text-[11px] md:text-xs font-semibold tracking-[0.28em] text-amber-700 uppercase mb-3">
             Get in touch
           </p>
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-wide">
-            Talk to your trusted jewellery experts
+
+          <h1 className="text-[24px] md:text-[30px] font-light uppercase tracking-[0.20em] text-gray-900 leading-snug">
+            Talk to your metal testing - laser soldering expert
           </h1>
-          <p className="mt-2 text-xs md:text-sm text-gray-500 max-w-xl mx-auto">
-            Share your requirement for computer touch, gold testing, silver
-            testing, laser soldering, or jewellery repairing, and get clear
-            guidance with accurate, professional service.
+
+          <p className="mt-4 text-xs md:text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed">
+            Connect with our laboratory experts for unmatched accuracy in gold and silver purity analysis. Whether you require advanced XRF computer gold & silver , high-precision laser soldering, or professional jewelry restoration, we provide clear guidance and master-level service for every piece.
           </p>
         </div>
 
         {/* Main Content Grid */}
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch mb-12 lg:mb-16">
           {/* Contact Form */}
           <div className="lg:order-1 h-full flex">
@@ -265,9 +266,9 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isLoading || !hasServiceSelected}
-                  className={`mt-1 inline-flex items-center justify-center w-full rounded-full bg-[#CFA04F] px-4 py-2.5 text-sm font-semibold text-white border border-[#facc15] hover:bg-[#f1c769] hover:border-[#fde68a] transition-transform transition-colors duration-300 hover:-translate-y-[1px] hover:shadow-md active:scale-95 ${isLoading || !hasServiceSelected
-                      ? "opacity-60 cursor-not-allowed hover:translate-y-0 hover:shadow-none active:scale-100"
-                      : ""
+                  className={` ${isLoading || !hasServiceSelected
+                    ? ""
+                    : ""
                     }`}
                 >
                   {isLoading ? "Sending..." : "Send Message"}

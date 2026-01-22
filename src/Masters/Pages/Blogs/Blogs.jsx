@@ -75,17 +75,24 @@ const Blogs = () => {
     <div className="w-full bg-gray-100 py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Header */}
-        <div className="text-center mb-10 md:mb-14">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-wide">
-            Insights &amp; Articles
+        <div className="text-center mb-10">
+          <p className="text-[11px] md:text-xs font-semibold tracking-[0.28em] text-amber-700 uppercase mb-3">
+            Blog & insights
+          </p>
+
+          <h1 className="text-[24px] md:text-[30px] font-light uppercase tracking-[0.20em] text-gray-900 leading-snug">
+            Insights &amp; articles
           </h1>
-          <p className="mt-3 text-sm md:text-base text-gray-500 max-w-2xl mx-auto">
+
+          <p className="mt-4 text-xs md:text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed">
             Stay updated with guides on gold testing, laser soldering, jewellery
             care, and more from GK Gold.
           </p>
         </div>
 
         {/* Blog grid */}
+
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-8">
           {blogPosts.map((post) => (
             <article
