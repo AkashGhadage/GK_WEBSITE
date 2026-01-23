@@ -6,11 +6,12 @@ import Gallary from "../Masters/Pages/Gallary/Gallary";
 import Blogs from "../Masters/Pages/Blogs/Blogs";
 import BlogDetails from "../Masters/Pages/Blogs/BlogDetails";
 import Contact from "../Masters/Pages/Contact/Contact";
+import Home from "../Masters/Pages/Home/Home";
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/gallary" element={<Gallary />} />
