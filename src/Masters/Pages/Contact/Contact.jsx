@@ -267,8 +267,8 @@ const Contact = () => {
                   type="submit"
                   disabled={isLoading || !hasServiceSelected}
                   className={` ${isLoading || !hasServiceSelected
-                    ? ""
-                    : ""
+                    ? "bg-gray-400 cursor-not-allowed text-white"
+                    : "*:"
                     }`}
                 >
                   {isLoading ? "Sending..." : "Send Message"}
