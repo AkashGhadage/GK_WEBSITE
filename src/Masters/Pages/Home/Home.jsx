@@ -102,7 +102,7 @@ const Home = () => {
             alt="Gold Jewelry Assay"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/40 via-blue-900/30 to-blue-900/50"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-blue-900/40 via-blue-900/30 to-blue-900/50"></div> */}
         </div>
 
         {/* Content */}

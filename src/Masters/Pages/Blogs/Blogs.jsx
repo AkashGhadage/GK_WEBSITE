@@ -10,7 +10,7 @@ const blogPosts = [
     excerpt:
       "Understand how hallmark testing protects you from under‑karat gold and ensures transparency in every transaction.",
     readTime: "4 min read",
-    date: "Jan 2026",
+    date: "15 Jan 2026",
     image: "/contact-image.jpg", // from public/
   },
   {
