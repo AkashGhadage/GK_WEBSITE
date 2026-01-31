@@ -1,26 +1,59 @@
+// import { Routes, Route } from "react-router-dom";
+// import HomePage from "../Masters/LandingPage/HomePage";
+// import About from "../Masters/Pages/About/About";
+// import Services from "../Masters/Pages/Services/Services";
+// import Gallary from "../Masters/Pages/Gallary/Gallary";
+// import Blogs from "../Masters/Pages/Blogs/Blogs";
+// import BlogDetails from "../Masters/Pages/Blogs/BlogDetails";
+// import Contact from "../Masters/Pages/Contact/Contact";
+// import Home from "../Masters/Pages/Home/Home";
+
+// const AppRoutes = () => {
+//   return (
+//     <Routes>
+//       <Route path="/home" element={<Home />} />
+//       <Route path="/about" element={<About />} />
+//       <Route path="/services" element={<Services />} />
+//       <Route path="/gallary" element={<Gallary />} />
+//       <Route path="/blogs" element={<Blogs />} />
+//       {/* 👇 this MUST exist */}
+//       <Route path="/blogs/:slug" element={<BlogDetails />} />
+//       <Route path="/contact" element={<Contact />} />
+//     </Routes>
+//   );
+// };
+
+// export default AppRoutes;
+
 import { Routes, Route } from "react-router-dom";
-import HomePage from "../Masters/LandingPage/HomePage";
+import Home from "../Masters/Pages/Home/Home";
 import About from "../Masters/Pages/About/About";
-import Services from "../Masters/Pages/Services/Services";
 import Gallary from "../Masters/Pages/Gallary/Gallary";
 import Blogs from "../Masters/Pages/Blogs/Blogs";
 import BlogDetails from "../Masters/Pages/Blogs/BlogDetails";
 import Contact from "../Masters/Pages/Contact/Contact";
-import Home from "../Masters/Pages/Home/Home";
+import MetalTesting from "../Masters/Pages/Services/MetalTesting";
+import ComputerTouchPage from "../Masters/Pages/Services/ComputerTouchPage";
+//import MetalTesting from "../Masters/Pages/Services/MetalTesting";
+import JewelleryRepair from "../Masters/Pages/Services/JewelleryRepair";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services />} />
       <Route path="/gallary" element={<Gallary />} />
       <Route path="/blogs" element={<Blogs />} />
-      {/* 👇 this MUST exist */}
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
+
+      {/* Service Pages */}
+      <Route path="/services/computer-touch" element={<ComputerTouchPage />} />
+      <Route path="/services/jewellery-repair" element={<JewelleryRepair />} />
+      <Route path="/services/metal-testing" element={<MetalTesting />} />
     </Routes>
   );
 };
 
 export default AppRoutes;
+
