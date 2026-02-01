@@ -4,7 +4,15 @@ import React, { useState } from "react";
 import { useParams, Link, useLocation } from "react-router-dom";
 import { FiLink } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
+import LaserSolderingVsTraditional from "./content/LaserSolderingVsTraditional";
+import WhyHallmarkTesting from "./Content/WhyHallmarkTesting";
+import DifferentMethodsToCheckGoldPurity from "./content/DifferentMethodsToCheckGoldPurity";
+import SellingOldGoldInEmergency from "./content/SellingOldGoldInEmergency";
+import GoldAsInvestmentJewelleryCoinsBars from "./content/GoldAsInvestmentJewelleryCoinsBars";
+import HowToCheckGoldPurityBeforeYouBuy from "./content/HowToCheckGoldPurityBeforeYouBuy";
 
+
+// Pure data only
 const blogPosts = [
   {
     id: 1,
@@ -14,211 +22,9 @@ const blogPosts = [
     readTime: "4 min read",
     date: "16 Jan 2026",
     image: "/contact-image.jpg",
-    content: (
-      <div className="space-y-5 md:space-y-6 text-sm md:text-base text-gray-700">
-        {/* Intro */}
-        <p>
-          <span className="font-semibold">
-            Hallmark testing is not just a government formality
-          </span>{" "}
-          – it is the simplest way to know whether the gold you are buying
-          actually matches what you are paying for.
-        </p>
-        <p>
-          In a market where even a small difference in purity can mean thousands
-          of rupees, understanding hallmarking protects you from loss and gives
-          you confidence in every purchase.
-        </p>
-
-        {/* What is BIS Hallmark */}
-        <h2 className="text-base md:text-lg font-semibold text-gray-900 mt-4">
-          What is a BIS Hallmark?
-        </h2>
-        <p>
-          In India, BIS hallmarking is an official certification of the purity
-          of gold issued by a BIS‑recognised assaying and hallmarking centre.
-          The jewellery piece is tested in a lab, and only after confirming the
-          purity does it receive the hallmark stamp.
-        </p>
-        <p>
-          This makes hallmarked gold different from “just promised” gold,
-          because a third‑party lab has verified the metal, not just the
-          jeweller.
-        </p>
-        <p>
-          A genuine BIS gold hallmark usually includes multiple symbols stamped
-          close to each other on the jewellery. These marks together confirm the
-          purity, the testing centre, and the jeweller who sold it.
-        </p>
-
-        {/* Key symbols */}
-        <h2 className="text-base md:text-lg font-semibold text-gray-900 mt-4">
-          Key symbols you should look for
-        </h2>
-        <p>When you examine a hallmarked gold ornament, look for these marks:</p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>
-            <span className="font-semibold">BIS logo</span> – shows it has
-            passed through an authorised system.
-          </li>
-          <li>
-            <span className="font-semibold">Purity / fineness mark</span> – for
-            example 22K916, 18K750, or 14K585.
-          </li>
-          <li>
-            <span className="font-semibold">
-              Assaying and hallmarking centre mark
-            </span>{" "}
-            – code or symbol of the testing centre.
-          </li>
-          <li>
-            <span className="font-semibold">Jeweller’s identification mark</span>{" "}
-            – registered mark of the jeweller or brand.
-          </li>
-          <li>
-            <span className="font-semibold">HUID number</span> – unique
-            Hallmark Unique ID for each piece.
-          </li>
-        </ul>
-
-        {/* How hallmark protects */}
-        <h2 className="text-base md:text-lg font-semibold text-gray-900 mt-4">
-          How hallmark testing protects you from loss
-        </h2>
-        <p>
-          The main reason hallmark testing matters is simple:{" "}
-          <span className="font-semibold">you are paying for purity.</span>
-        </p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>
-            <span className="font-semibold">Prevents under‑karat gold:</span> If
-            you pay for 22K but receive something closer to 20K, hallmarking
-            reduces this risk by confirming actual purity.
-          </li>
-          <li>
-            <span className="font-semibold">Reduces disputes:</span> During
-            buyback, exchange, or resale, a hallmarked piece is easier to value
-            fairly.
-          </li>
-          <li>
-            <span className="font-semibold">Legal protection:</span> BIS
-            standards make it easier to raise a complaint if purity does not
-            match the claim.
-          </li>
-          <li>
-            <span className="font-semibold">
-              Better value on loans or resale:
-            </span>{" "}
-            Banks and buyers are more comfortable when purity is already
-            certified.
-          </li>
-        </ul>
-        <p>
-          Even a difference of 1–2 karats on a heavy chain or bangle can mean a
-          big amount of money over the lifetime of that jewellery.
-        </p>
-
-        {/* Role of Independent Testing Centres */}
-        <h2 className="text-base md:text-lg font-semibold text-gray-900 mt-4">
-          Role of Independent Testing Centres
-        </h2>
-        <p>
-          Even with hallmarking in place, many customers still want an extra
-          level of reassurance, especially for high‑value jewellery or old
-          family gold. This is where independent precious metal testing centres
-          become valuable partners for both customers and jewellers.
-        </p>
-        <p>
-          These centres use modern, non‑destructive methods such as XRF to test
-          jewellery and coins. The gold is analysed through the surface without
-          cutting, melting, or damaging the piece, so its appearance and value
-          remain intact.
-        </p>
-        <p className="font-semibold">For a customer, this means:</p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>You are not depending only on verbal promises.</li>
-          <li>
-            You get a clear, technical understanding of the purity of the gold
-            you own.
-          </li>
-          <li>
-            You can make decisions with confidence, whether you are buying,
-            selling, or pledging.
-          </li>
-        </ul>
-        <p>
-          An independent test is about{" "}
-          <span className="font-semibold">peace of mind</span>, not about
-          doubting every jeweller.
-        </p>
-
-        {/* Simple checks */}
-        <h2 className="text-base md:text-lg font-semibold text-gray-900 mt-4">
-          Simple Checks Every Customer Should Do
-        </h2>
-        <p>
-          Before buying, or after receiving new jewellery, customers can protect
-          themselves by following a few simple checks:
-        </p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>
-            Look closely at all hallmark symbols under good lighting or with a
-            magnifying glass.
-          </li>
-          <li>
-            Match the karat and fineness mentioned on the jewellery with what is
-            written on the bill.
-          </li>
-          <li>
-            For costly or sentimental jewellery, consider an independent purity
-            test.
-          </li>
-          <li>Use official verification tools or apps when available.</li>
-        </ul>
-        <p>
-          These checks take only a few minutes but can save you from
-          misunderstandings or losses later.
-        </p>
-
-        {/* Future transparency */}
-        <h2 className="text-base md:text-lg font-semibold text-gray-900 mt-4">
-          Why Purity Transparency Will Matter More in the Future
-        </h2>
-        <p>
-          As hallmarking becomes more common and awareness increases, customers
-          will naturally expect{" "}
-          <span className="font-semibold">clarity about purity</span>, not just
-          assurances.
-        </p>
-        <p>Jewellery that has been properly tested and explained is:</p>
-        <ul className="list-disc pl-5 space-y-1">
-          <li>Easier to exchange, pledge, or resell.</li>
-          <li>More straightforward for any buyer or bank to value.</li>
-          <li>Less likely to cause disputes over karat or weight.</li>
-        </ul>
-        <p>
-          For families buying gold for weddings, savings, or long‑term security,
-          knowing the exact purity adds long‑term confidence.
-        </p>
-
-        {/* Takeaway */}
-        <h2 className="text-base md:text-lg font-semibold text-gray-900 mt-4">
-          A Customer’s Takeaway
-        </h2>
-        <p>
-          <span className="font-semibold">Hallmarking helps you start with trust.</span>{" "}
-          Independent testing helps you feel sure.
-        </p>
-        <p>
-          By understanding hallmark marks and, when needed, getting jewellery
-          checked at a trusted independent testing centre such as Gurukrupa Gold
-          Testing in Karol Bagh, customers can be confident that every gram they
-          pay for matches the purity they expect.
-        </p>
-      </div>
-    ),
+    content:
+      "Hallmark testing is the simplest way to know whether the gold you are buying actually matches what you are paying for.",
   },
-  // other posts...
   {
     id: 2,
     slug: "laser-soldering-vs-traditional",
@@ -236,50 +42,63 @@ const blogPosts = [
     category: "Customer Guide",
     title: "How to Check Gold Purity Before You Buy",
     content:
-      "Detailed steps customers can follow: check hallmark, verify karat, test small samples, and when to visit a testing center before big purchases.",
+      "Simple checks every customer should do before buying gold jewellery, from reading the hallmark correctly to using apps and independent testing centres when in doubt.",
     readTime: "3 min read",
     date: "Dec 2025",
     image: "/contact-image.jpg",
   },
+
   {
     id: 4,
-    slug: "caring-for-daily-wear-gold-jewellery",
-    category: "Jewellery Care",
-    title: "Caring for Your Daily‑Wear Gold Jewellery",
-    content:
-      "Explain cleaning routines, safe storage, avoiding harsh chemicals, and when to bring jewellery for periodic inspection and repair.",
+    slug: "different-methods-to-check-gold-purity",
+    category: "Customer Guide",
+    title: "Different Methods to Check Gold Purity",
+    excerpt:
+      "Understand key methods like hallmark inspection, touchstone tests, density checks, and advanced machine testing so you know how purity is verified.",
     readTime: "4 min read",
     date: "Dec 2025",
     image: "/contact-image.jpg",
   },
   {
     id: 5,
-    slug: "why-jewelers-trust-testing-centers",
-    category: "Business Insight",
-    title: "Why Jewelers Trust Independent Testing Centers",
+    slug: "selling-old-gold-in-emergency",
+    category: "Must Read",
+    title: "Must Read If You Are Selling Old Gold During an Emergency",
     content:
-      "Talk about transparency, dispute resolution, and how third‑party reports improve reputation and repeat business for jewellers.",
+      "Essential points to remember when selling old gold for urgent cash, including rate checks, documentation, purity testing, and how to avoid panic decisions.",
     readTime: "5 min read",
     date: "Nov 2025",
     image: "/contact-image.jpg",
   },
   {
     id: 6,
-    slug: "basics-of-bis-hallmarking",
-    category: "Compliance",
-    title: "Basics of BIS Hallmarking for Retail Customers",
+    slug: "gold-as-investment-jewellery-coins-bars",
+    category: "Investment Guide",
+    title: "Gold as Investment: Jewellery vs Coins vs Bars",
     content:
-      "Overview of BIS hallmark components, karat symbols, year of marking, and what customers should check on every ornament.",
+      "Jewellery carries emotion and design, but high making charges and resale cuts make it a weak investment. Coins and bars, with higher purity and lower premiums per gram, are usually better for serious long‑term savings.",
     readTime: "6 min read",
     date: "Nov 2025",
     image: "/contact-image.jpg",
   },
+
 ];
+
+// Map slugs to rich JSX components
+const richContentBySlug = {
+  "why-hallmark-testing-matters": WhyHallmarkTesting,
+  "laser-soldering-vs-traditional": LaserSolderingVsTraditional,
+  "different-methods-to-check-gold-purity": DifferentMethodsToCheckGoldPurity,
+  "selling-old-gold-in-emergency": SellingOldGoldInEmergency,
+  "gold-as-investment-jewellery-coins-bars": GoldAsInvestmentJewelleryCoinsBars,
+  "how-to-check-gold-purity-before-you-buy": HowToCheckGoldPurityBeforeYouBuy,
+
+};
+
 
 const BlogDetails = () => {
   const { slug } = useParams();
   const location = useLocation();
-
   const [copied, setCopied] = useState(false);
 
   const post = blogPosts.find((p) => p.slug === slug);
@@ -298,7 +117,6 @@ const BlogDetails = () => {
     );
   }
 
-  const isRichContent = React.isValidElement(post.content);
   const currentUrl = `${window.location.origin}${location.pathname}`;
   const relatedPosts = blogPosts.filter((p) => p.slug !== slug).slice(0, 4);
 
@@ -311,6 +129,8 @@ const BlogDetails = () => {
       setCopied(false);
     }
   };
+
+  const RichComponent = richContentBySlug[post.slug] || null;
 
   return (
     <div className="w-full bg-gray-100 py-10 md:py-14">
@@ -339,9 +159,14 @@ const BlogDetails = () => {
           {/* Main column */}
           <div className="flex-1">
             {/* Title */}
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+
+            <h1
+              className="text-2xl md:text-3xl font-bold mb-4
+             text-[#b79654]"
+            >
               {post.title}
             </h1>
+
 
             {/* Meta + share */}
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
@@ -397,8 +222,8 @@ const BlogDetails = () => {
             </div>
 
             {/* Content */}
-            {isRichContent ? (
-              post.content
+            {RichComponent ? (
+              <RichComponent />
             ) : (
               <p className="text-sm md:text-base leading-relaxed text-gray-700 whitespace-pre-line">
                 {post.content}

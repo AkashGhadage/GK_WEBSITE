@@ -95,7 +95,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-rose-50/50 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="min-h-screen  bg-gray-100 from-amber-50 via-white to-rose-50/50 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="relative max-w-5xl mx-auto">
         {/* Hero Section - meaningful copy */}
         <div className="text-center mb-12">

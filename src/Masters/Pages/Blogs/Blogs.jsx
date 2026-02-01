@@ -1,3 +1,5 @@
+// src/Masters/Pages/Blogs/Blogs.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -37,33 +39,33 @@ const blogPosts = [
   },
   {
     id: 4,
-    slug: "caring-for-daily-wear-gold-jewellery",
-    category: "Jewellery Care",
-    title: "Caring for Your Daily‑Wear Gold Jewellery",
+    slug: "different-methods-to-check-gold-purity",
+    category: "Customer Guide",
+    title: "Different Methods to Check Gold Purity",
     excerpt:
-      "Tips to keep your jewellery shining while preventing scratches, bend marks, and stone loosening.",
+      "Understand key methods like hallmark inspection, touchstone tests, density checks, and advanced machine testing so you know how purity is verified.",
     readTime: "4 min read",
     date: "Dec 2025",
     image: "/contact-image.jpg",
   },
   {
     id: 5,
-    slug: "why-jewelers-trust-testing-centers",
-    category: "Business Insight",
-    title: "Why Jewelers Trust Independent Testing Centers",
+    slug: "selling-old-gold-in-emergency",
+    category: "Must Read",
+    title: "Must Read If You Are Selling Old Gold During an Emergency",
     excerpt:
-      "Learn how third‑party testing adds credibility to your shop and builds long‑term customer trust.",
+      "Before you rush to sell jewellery for urgent cash, understand how to avoid heavy losses, choose the right buyer, and prepare your documents.",
     readTime: "5 min read",
     date: "Nov 2025",
     image: "/contact-image.jpg",
   },
   {
     id: 6,
-    slug: "basics-of-bis-hallmarking",
-    category: "Compliance",
-    title: "Basics of BIS Hallmarking for Retail Customers",
+    slug: "gold-as-investment-jewellery-coins-bars",
+    category: "Investment Guide",
+    title: "Gold as Investment: Jewellery vs Coins vs Bars",
     excerpt:
-      "A quick overview of BIS hallmark symbols, karat markings, and what they mean for purity and pricing.",
+      "Jewellery is perfect for wearing, but a weak investment. See why serious savers should prefer high‑purity coins and bars instead.",
     readTime: "6 min read",
     date: "Nov 2025",
     image: "/contact-image.jpg",
@@ -77,7 +79,7 @@ const Blogs = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <p className="text-[11px] md:text-xs font-semibold tracking-[0.28em] text-amber-700 uppercase mb-3">
-            Blog & insights
+            KNOWLEDGE IS POWER
           </p>
 
           <h1 className="text-[24px] md:text-[30px] font-light uppercase tracking-[0.20em] text-gray-900 leading-snug">
@@ -86,61 +88,67 @@ const Blogs = () => {
 
           <p className="mt-4 text-xs md:text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed">
             Stay updated with guides on gold testing, laser soldering, jewellery
-            care, and more from GK Gold.
+            care, and Ongoing Economic Education You Deserve.
           </p>
         </div>
 
         {/* Blog grid */}
-
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-8">
           {blogPosts.map((post) => (
-            <article
+            <Link
               key={post.id}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 overflow-hidden"
+              to={`/blogs/${post.slug}`}
+              className="block group"
             >
-              {/* Image */}
-              <div className="relative h-52 md:h-60 w-full overflow-hidden">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="h-full w-full object-cover transform hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-              </div>
-
-              {/* Content */}
-              <div className="p-5 md:p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="inline-flex items-center rounded-full bg-[rgb(48,62,73)]/5 border border-[rgb(48,62,73)]/20 px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-[rgb(48,62,73)]">
-                    {post.category}
-                  </span>
-                  <span className="text-[11px] text-gray-400">
-                    {post.date} • {post.readTime}
-                  </span>
+              <article className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 overflow-hidden h-full cursor-pointer">
+                {/* Image */}
+                <div className="relative h-52 md:h-60 w-full overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="h-full w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                 </div>
 
-                <h2 className="text-base md:text-lg font-semibold text-gray-900 leading-snug mb-2">
-                  {post.title}
-                </h2>
+                {/* Content */}
+                <div className="p-5 md:p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="inline-flex items-center rounded-full bg-[rgb(48,62,73)]/5 border border-[rgb(48,62,73)]/20 px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-[rgb(48,62,73)]">
+                      {post.category}
+                    </span>
+                    <span className="text-[11px] text-gray-400">
+                      {post.date} • {post.readTime}
+                    </span>
+                  </div>
 
-                <p className="text-sm text-gray-500 mb-4">
-                  {post.excerpt}
-                </p>
-                <Link to={`/blogs/${post.slug}`}>
-                  <button
-                    type="button"
-                    className="px-4 py-2 rounded-full bg-[rgb(248,249,252)]
-               text-xs md:text-sm font-semibold text-[rgb(207,160,79)]
-               hover:bg-[rgb(207,160,79)] hover:text-black
-               transition-colors duration-200 shadow-sm"
+                  {/* Title with custom hover color #b79654 */}
+                  <h2
+                    className="text-base md:text-lg font-semibold leading-snug mb-2
+                               text-gray-900 transition-colors duration-200
+                               group-hover:text-[#b79654]"
+                  >
+                    {post.title}
+                  </h2>
+
+                  <p
+                    className="text-sm text-gray-500 mb-4
+                               transition-colors duration-200 group-hover:text-gray-600"
+                  >
+                    {post.excerpt}
+                  </p>
+
+                  <span
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-[rgb(248,249,252)]
+                   text-xs md:text-sm font-semibold text-[rgb(207,160,79)]
+                   group-hover:bg-[rgb(207,160,79)] group-hover:text-black
+                   transition-colors duration-200 shadow-sm"
                   >
                     Read more →
-                  </button>
-                </Link>
-
-              </div>
-            </article>
+                  </span>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
       </div>
