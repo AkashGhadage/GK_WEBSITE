@@ -133,6 +133,17 @@ export default function Navbar() {
                         >
                           Metal Testing
                         </button>
+
+                        <button
+                          onClick={() => {
+                            navigate("/services/gold-silver-testing");
+                            setShowServices(false);
+                          }}
+                          className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
+                          type="button"
+                        >
+                          Gold & Silver Testing
+                        </button>
                       </div>
                     )}
                   </div>

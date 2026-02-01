@@ -9,6 +9,7 @@ import Contact from "../Masters/Pages/Contact/Contact";
 import MetalTesting from "../Masters/Pages/Services/MetalTesting";
 import ComputerTouchPage from "../Masters/Pages/Services/ComputerTouchPage";
 import JewelleryRepair from "../Masters/Pages/Services/JewelleryRepair";
+import GoldSilverTesting from "../Masters/Pages/Services/GoldSilverTesting";
 
 const AppRoutes = () => {
   return (
@@ -28,6 +29,7 @@ const AppRoutes = () => {
       <Route path="/services/computer-touch" element={<ComputerTouchPage />} />
       <Route path="/services/jewellery-repair" element={<JewelleryRepair />} />
       <Route path="/services/metal-testing" element={<MetalTesting />} />
+      <Route path="/services/Gold-Silver-Testing" element={<GoldSilverTesting/>} />
     </Routes>
   );
 };
