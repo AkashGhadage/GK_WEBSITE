@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import FAQSection from "../../Shared/FAQSection";
 import { globalFaqs } from "../../Shared/faqData";
+import GoogleReview from "../../Shared/GoogleReview";
 
 const Home = () => {
   // WhatsApp contact details
@@ -128,6 +129,11 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Google review */}
+      <section>
+        <GoogleReview></GoogleReview>
       </section>
 
       {/* Service Section */}

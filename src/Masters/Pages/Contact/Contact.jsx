@@ -159,14 +159,13 @@ const Contact = () => {
                 {/* Email Row */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide">
-                    Email Address <span className="text-red-500">*</span>
+                    Email Address
                   </label>
                   <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    required
                     disabled={isLoading}
                     className="w-full h-11 px-4 rounded-xl border border-gray-300 bg-white/70 backdrop-blur-sm text-sm md:text-base text-gray-900 focus:border-[rgb(48,62,73)] focus:ring-2 focus:ring-[rgb(48,62,73)]/20 transition-all disabled:opacity-60"
                     placeholder="your.email@example.com"
@@ -238,11 +237,6 @@ const Contact = () => {
                       </label>
                     ))}
                   </div>
-                  {!hasServiceSelected && !isLoading && (
-                    <p className="mt-1 text-xs text-rose-600 font-medium">
-                      Please select at least one service.
-                    </p>
-                  )}
                 </div>
 
                 {/* Message Field */}
