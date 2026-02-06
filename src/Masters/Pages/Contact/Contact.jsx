@@ -108,7 +108,11 @@ const Contact = () => {
           </h1>
 
           <p className="mt-4 text-xs md:text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            Connect with our laboratory experts for unmatched accuracy in gold and silver purity analysis. Whether you require advanced XRF computer gold & silver , high-precision laser soldering, or professional jewelry restoration, we provide clear guidance and master-level service for every piece.
+            Connect with our laboratory experts for unmatched accuracy in gold
+            and silver purity analysis. Whether you require advanced XRF
+            computer gold & silver , high-precision laser soldering, or
+            professional jewelry restoration, we provide clear guidance and
+            master-level service for every piece.
           </p>
         </div>
 
@@ -260,15 +264,41 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isLoading || !hasServiceSelected}
-                  className={` ${isLoading || !hasServiceSelected
-                    ? "bg-gray-400 cursor-not-allowed text-white"
-                    : "*:"
-                    }`}
+                  className={`w-full h-12 rounded-xl font-bold tracking-widest uppercase text-sm transition-all duration-300 
+    ${
+      isLoading || !hasServiceSelected
+        ? "bg-blue-500 cursor-not-allowed text-black-500"
+        : "bg-[rgb(48,62,73)] text-white hover:bg-[rgb(60,75,88)] hover:shadow-lg active:scale-[0.98] shadow-md"
+    }`}
                 >
-                  {isLoading ? "Sending..." : "Send Message"}
+                  {isLoading ? (
+                    <span className="flex items-center justify-center gap-2">
+                      <svg
+                        className="animate-spin h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      Sending...
+                    </span>
+                  ) : (
+                    "Send Message"
+                  )}
                 </button>
-
-
               </form>
             </div>
           </div>
@@ -312,8 +342,9 @@ const Contact = () => {
         <div className="fixed inset-0 z-[80] flex items-center justify-center pointer-events-none">
           <div className="pointer-events-auto rounded-2xl bg-white shadow-2xl border border-gray-200 px-6 py-4 flex items-center gap-3 animate-[fadeIn_0.2s_ease-out]">
             <div
-              className={`flex h-8 w-8 items-center justify-center rounded-full text-white text-sm font-bold ${status.includes("✅") ? "bg-emerald-500" : "bg-rose-500"
-                }`}
+              className={`flex h-8 w-8 items-center justify-center rounded-full text-white text-sm font-bold ${
+                status.includes("✅") ? "bg-emerald-500" : "bg-rose-500"
+              }`}
             >
               {status.includes("✅") ? "✓" : "!"}
             </div>

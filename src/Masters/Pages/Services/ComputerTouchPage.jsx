@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { globalFaqs } from "../../Shared/faqData";
-import FAQSection from "../../Shared/FAQSection";
 import { Link } from "react-router-dom";
+import FAQSection from "../../Shared/FAQSection";
+import { globalFaqs } from "../../Shared/faqData";
 
 const ComputerTouchPage = () => {
   const whatsappNumber = "+919975796681";
@@ -230,6 +229,11 @@ const ComputerTouchPage = () => {
             </a>
           </div>
         </div>
+        {/* Shared FAQ Section – just above footer */}
+      <FAQSection
+        title="Frequently asked questions about gold testing & laser soldering"
+        faqs={globalFaqs}
+      />
       </section>
     </div>
   );
