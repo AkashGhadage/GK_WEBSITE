@@ -1,153 +1,184 @@
-// src/Masters/Pages/Services/GoldSilverTesting.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import FAQSection from "../../Shared/FAQSection";
 import { globalFaqs } from "../../Shared/faqData";
+import {
+  CheckCircle,
+  ShieldCheck,
+  Zap,
+  Award,
+  Search,
+  Clock,
+  Play
+} from "lucide-react";
 
-const GoldSilverTesting = () => {
-  // WhatsApp for this service
+const PurityTestingPage = () => {
   const whatsappNumber = "+919975796681";
-  const whatsappMessage =
-    "Hello, I want to know more about your gold and silver purity testing service.";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    whatsappMessage,
-  )}`;
+  const whatsappMessage = "Hello, I want to know more about your Gold & Silver purity testing service.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  const features = [
+    {
+      title: "German XRF Technology",
+      desc: "We use the Fischer Goldscope 550, the gold standard in precision testing, ensuring results are accurate to the 0.01%.",
+      icon: Search,
+    },
+    {
+      title: "Non-Destructive Process",
+      desc: "Your jewelry is never rubbed, filed, or melted. The testing is entirely non-invasive and safe for all precious metals.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Instant Certification",
+      desc: "Receive a detailed purity report in under 5 minutes, allowing you to proceed with transactions immediately.",
+      icon: Clock,
+    },
+    {
+      title: "Expert Guidance",
+      desc: "Our team provides honest market insights based on your purity results to help you maximize your asset value.",
+      icon: Zap,
+    },
+    {
+      title: "Transparent Valuation",
+      desc: "The entire testing process happens right in front of you, ensuring complete peace of mind and integrity.",
+      icon: CheckCircle,
+    },
+    {
+      title: "Global Standards",
+      desc: "Our reports are recognized by banks and jewelers, making them ideal for gold loans and quality assurance.",
+      icon: Award,
+    },
+  ];
 
   return (
-    <div className="min-h-screen bg-gray-100 py-16 px-4 md:px-8">
-      <section className="bg-white rounded-3xl shadow-sm border border-gray-200 py-12 px-4 md:px-8 max-w-6xl mx-auto">
-        <div className="space-y-12">
-          {/* Top: intro + video */}
-          <div className="grid gap-10 md:grid-cols-[1.4fr_minmax(0,1fr)] items-center">
-            {/* Text */}
-            <div>
-              <p className="text-[11px] md:text-xs font-semibold tracking-[0.28em] text-gray-500 uppercase mb-2">
-                Service we offer
-              </p>
-              <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                Gold & Silver Purity Testing
-              </h1>
-              <p className="text-sm md:text-base text-gray-600 mb-3">
-                Non‑destructive XRF testing for your gold and silver jewellery,
-                coins and bars, so you know the exact purity before you buy,
-                sell or remake anything.
-              </p>
-              <p className="text-sm md:text-base text-gray-600">
-                Every test is done on calibrated machines and each report is
-                personally explained in simple language, so you clearly
-                understand the purity, weight and value of your jewellery.
-              </p>
+    <div className="min-h-screen bg-[#fcfaf7] py-16 px-4 md:px-8">
+      {/* Main Container */}
+      <section className="bg-white rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 py-12 px-4 md:px-12 max-w-6xl mx-auto space-y-16">
 
-              {/* CTAs */}
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 text-sm md:text-base font-semibold rounded-full bg-[#b79654] text-white hover:bg-[#9f8350] transition-colors shadow-sm"
-                >
-                  Book a purity test
-                </Link>
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-3 text-sm md:text-base font-semibold rounded-full border border-gray-300 text-gray-800 hover:border-[#b79654] hover:text-[#b79654] transition-colors"
-                >
-                  Chat on WhatsApp
-                </a>
-              </div>
+        {/* Hero Section */}
+        <div className="grid gap-12 md:grid-cols-[1.2fr_1fr] items-center">
+          <div>
+            <span className="text-[10px] font-bold tracking-[0.3em] text-[#b79654] uppercase mb-4 block">
+              Professional Lab Services
+            </span>
+            <h1 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6 leading-tight">
+              Gold & Silver <br />
+              <span className="text-[#b79654]">Purity Testing</span>
+            </h1>
+
+            <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+              We provide Non‑destructive XRF, Fast, Reliable testing for your gold and silver jewellery,
+              coins and bars, so you know the exact purity before you buy,
+              sell or remake anything.
+              so you know the exact purity before you buy,
+              sell or remake anything.
+            </p>
+
+            <div className="flex flex-wrap gap-3 mb-8">
+              {["No Melting, No Damage, No Risk", "Free Testing", "Instant Reports", "Transparent process", " Accurate & reliable results"].map((tag) => (
+                <span key={tag} className="px-4 py-1.5 rounded-full bg-stone-100 text-stone-700 text-xs font-medium border border-stone-200">
+                  ✦ {tag}
+                </span>
+              ))}
             </div>
 
-            {/* Video */}
-            <div className="rounded-2xl overflow-hidden border border-gray-200 bg-black shadow-sm max-w-md mx-auto md:mx-0">
+            <div className="flex flex-wrap gap-4">
+              <Link to="/contact" className="px-8 py-4 bg-[#b79654] text-white rounded-full font-bold hover:bg-[#967a42] transition-all transform hover:-translate-y-1 shadow-lg shadow-[#b79654]/20">
+                Book Purity Test
+              </Link>
+              <a href={whatsappLink} className="px-8 py-4 border-2 border-gray-200 text-gray-800 rounded-full font-bold hover:border-[#b79654] transition-all">
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+
+          {/* Video / Visual Element */}
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#b79654] to-[#e4cf9c] rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+            <div className="relative rounded-[1.8rem] overflow-hidden bg-black aspect-video shadow-2xl">
               <video
-                className="w-full h-56 md:h-64 object-cover"
+                className="w-full h-full object-cover"
                 src="/videos/gold-silver-purity-testing.mp4"
                 controls
                 poster="/videos/gold-silver-purity-testing-thumbnail.jpg"
               />
-            </div>
-          </div>
-
-          {/* Middle: 3 key trust cards */}
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5">
-              <h2 className="text-sm font-semibold text-gray-900 mb-2">
-                Precision & accuracy
-              </h2>
-              <p className="text-xs md:text-sm text-gray-600">
-                XRF machines calibrated to industry standards give you reliable,
-                repeatable purity readings that match hallmarking and regulatory
-                expectations.[web:201][web:232]
-              </p>
-            </div>
-
-            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5">
-              <h2 className="text-sm font-semibold text-gray-900 mb-2">
-                Customized insights
-              </h2>
-              <p className="text-xs md:text-sm text-gray-600">
-                We don’t just show a number. We explain what that purity means
-                for buying, selling, pledging or remaking your jewellery in your
-                real‑life situation.[web:232][web:236]
-              </p>
-            </div>
-
-            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-5">
-              <h2 className="text-sm font-semibold text-gray-900 mb-2">
-                Timely results
-              </h2>
-              <p className="text-xs md:text-sm text-gray-600">
-                Most items are tested in 2–5 minutes, so you can quickly
-                complete your purchase, sale or loan work without long waiting
-                time.[web:203][web:235]
-              </p>
-            </div>
-          </div>
-
-          {/* Bottom: expertise, security, standards */}
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="border border-gray-200 rounded-2xl p-5 bg-white">
-              <h2 className="text-sm font-semibold text-gray-900 mb-2">
-                Industry expertise
-              </h2>
-              <p className="text-xs md:text-sm text-gray-600">
-                Years of experience in metal testing and jewellery work help us
-                read complex items accurately and guide you with practical
-                suggestions you can actually use.[web:233][web:236]
-              </p>
-            </div>
-
-            <div className="border border-gray-200 rounded-2xl p-5 bg-white">
-              <h2 className="text-sm font-semibold text-gray-900 mb-2">
-                Confidential & secure
-              </h2>
-              <p className="text-xs md:text-sm text-gray-600">
-                Your jewellery stays under your supervision during the process,
-                and all purity results and valuations are treated as
-                confidential and shared only with you.[web:232][web:236]
-              </p>
-            </div>
-
-            <div className="border border-gray-200 rounded-2xl p-5 bg-white">
-              <h2 className="text-sm font-semibold text-gray-900 mb-2">
-                Certified testing standards
-              </h2>
-              <p className="text-xs md:text-sm text-gray-600">
-                Our procedures follow nationally and internationally recognized
-                testing standards, giving you lab‑style reports that support
-                quality assurance, loans and documentation.[web:201][web:232]
-              </p>
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:scale-110 transition-transform">
+                <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center">
+                  <Play className="text-white fill-white w-6 h-6 ml-1" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        {/* Shared FAQ Section – just above footer */}
-        <FAQSection
-          title="Frequently asked questions about gold testing & laser soldering"
-          faqs={globalFaqs}
-        />
+
+        {/* Feature Section */}
+        <div className="space-y-10">
+          <div className="text-center space-y-4">
+            <h2 className="text-2xl md:text-4xl font-serif font-bold text-gray-900">
+              Why Choose Our Purity Lab?
+            </h2>
+            <div className="flex items-center justify-center gap-4">
+              <div className="h-[2px] w-12 bg-[#b79654]"></div>
+              <p className="text-[#b79654] font-medium tracking-widest uppercase text-sm">Quality Assurance</p>
+              <div className="h-[2px] w-12 bg-[#b79654]"></div>
+            </div>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((f, i) => {
+              const IconComponent = f.icon;
+              return (
+                <div key={i} className="group p-8 bg-white border border-gray-100 rounded-3xl hover:border-[#b79654]/30 hover:shadow-2xl hover:shadow-[#b79654]/10 transition-all duration-300">
+                  <div className="mb-5 p-3 rounded-2xl bg-[#fcfaf7] w-fit group-hover:bg-[#b79654] transition-colors duration-300">
+                    <IconComponent className="w-6 h-6 text-[#b79654] group-hover:text-white transition-colors duration-300" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">{f.title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">{f.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Targeted Audience Card */}
+        <div className="bg-stone-900 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden">
+          <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Who is this service for?</h2>
+              <p className="text-stone-400 mb-6">Expert verification for every need—whether you are an investor, a jeweler, or a family holder.</p>
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  "Jewellery buyers & sellers",
+                  "Bullion traders & investors",
+                  "Gold loan & pledge customers",
+                  "Jewellers & retail traders",
+                  "Any Individual with gold or silver assets",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3 text-stone-200">
+                    <CheckCircle className="w-4 h-4 text-[#b79654]" />
+                    <span className="text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="text-center md:text-right space-y-6">
+              <p className="text-xl font-light italic text-stone-300">"Precise testing for lasting confidence."</p>
+              <Link to="/contact" className="inline-block bg-[#b79654] px-10 py-4 rounded-full font-bold hover:bg-[#d4af37] transition-colors">
+                Visit Our Lab
+              </Link>
+            </div>
+          </div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#b79654]/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection
+        title="Gold & Silver Purity Testing FAQs"
+        faqs={globalFaqs}
+      />
     </div>
   );
 };
 
-export default GoldSilverTesting;
+export default PurityTestingPage;
