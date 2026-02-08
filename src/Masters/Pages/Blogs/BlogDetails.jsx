@@ -21,7 +21,7 @@ const blogPosts = [
     title: "Why Hallmark Testing Matters for Your Jewellery",
     readTime: "4 min read",
     date: "16 Jan 2026",
-    image: "/contact-image.jpg",
+    image: "/hallmark_testing.png",
     content:
       "Hallmark testing is the simplest way to know whether the gold you are buying actually matches what you are paying for.",
   },
@@ -34,7 +34,7 @@ const blogPosts = [
       "Full content for laser soldering vs traditional soldering. Explain advantages such as precision, minimal heat impact, better joins for delicate chains, and why modern workshops prefer laser.",
     readTime: "5 min read",
     date: "Jan 2026",
-    image: "/contact-image.jpg",
+    image: "/gold_soldering.png",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const blogPosts = [
       "Simple checks every customer should do before buying gold jewellery, from reading the hallmark correctly to using apps and independent testing centres when in doubt.",
     readTime: "3 min read",
     date: "Dec 2025",
-    image: "/contact-image.jpg",
+    image: "/goldpurity.png",
   },
 
   {
@@ -57,7 +57,7 @@ const blogPosts = [
       "Understand key methods like hallmark inspection, touchstone tests, density checks, and advanced machine testing so you know how purity is verified.",
     readTime: "4 min read",
     date: "Dec 2025",
-    image: "/contact-image.jpg",
+    image: "/different_method.png",
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ const blogPosts = [
       "Essential points to remember when selling old gold for urgent cash, including rate checks, documentation, purity testing, and how to avoid panic decisions.",
     readTime: "5 min read",
     date: "Nov 2025",
-    image: "/contact-image.jpg",
+    image: "/sellingGold.png",
   },
   {
     id: 6,
@@ -79,7 +79,7 @@ const blogPosts = [
       "Jewellery carries emotion and design, but high making charges and resale cuts make it a weak investment. Coins and bars, with higher purity and lower premiums per gram, are usually better for serious long‑term savings.",
     readTime: "6 min read",
     date: "Nov 2025",
-    image: "/contact-image.jpg",
+    image: "/Investment.png",
   },
 
 ];

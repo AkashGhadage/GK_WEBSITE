@@ -13,7 +13,7 @@ const blogPosts = [
       "Understand how hallmark testing protects you from under‑karat gold and ensures transparency in every transaction.",
     readTime: "4 min read",
     date: "15 Jan 2026",
-    image: "/contact-image.jpg", // from public/
+    image: "/hallmark_testing.png",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const blogPosts = [
       "See how modern laser soldering offers cleaner joints, less heat damage, and more precise repairs for delicate ornaments.",
     readTime: "5 min read",
     date: "Jan 2026",
-    image: "/contact-image.jpg",
+    image: "/gold_soldering.png",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const blogPosts = [
       "Simple steps every customer should follow before buying jewellery to avoid losses and confusion later.",
     readTime: "3 min read",
     date: "Dec 2025",
-    image: "/contact-image.jpg",
+    image: "/goldpurity.png",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const blogPosts = [
       "Understand key methods like hallmark inspection, touchstone tests, density checks, and advanced machine testing so you know how purity is verified.",
     readTime: "4 min read",
     date: "Dec 2025",
-    image: "/contact-image.jpg",
+    image: "/different_method.png",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const blogPosts = [
       "Before you rush to sell jewellery for urgent cash, understand how to avoid heavy losses, choose the right buyer, and prepare your documents.",
     readTime: "5 min read",
     date: "Nov 2025",
-    image: "/contact-image.jpg",
+    image: "/sellingGold.png",
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ const blogPosts = [
       "Jewellery is perfect for wearing, but a weak investment. See why serious savers should prefer high‑purity coins and bars instead.",
     readTime: "6 min read",
     date: "Nov 2025",
-    image: "/contact-image.jpg",
+    image: "/Investment.png",
   },
 ];
 
