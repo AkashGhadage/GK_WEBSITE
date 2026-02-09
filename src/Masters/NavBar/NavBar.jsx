@@ -1,6 +1,6 @@
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { ChevronDown } from "lucide-react"; // dropdown arrow icon
+import { ChevronDown } from "lucide-react";
 
 const NavbarComponents = [
   { name: "Home", path: "/home" },
@@ -63,87 +63,85 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Center: nav links (desktop) */}
+        {/* Center: nav links */}
         <nav className="hidden md:flex flex-1 justify-center px-4">
           <div className="flex items-center gap-5 text-xs lg:text-sm font-medium">
 
             {NavbarComponents.map((item) => {
               if (item.name === "Services") {
                 return (
-                  <div key={item.name} className="relative">
-                    <button
-                      onClick={() => setShowServices((prev) => !prev)}
-                      className={`flex items-center gap-1 px-1.5 py-1
+                  <div
+                    key={item.name}
+                    className="relative"
+                    onMouseEnter={() => setShowServices(true)}
+                    onMouseLeave={() => setShowServices(false)}
+                  >
+                    {/* Services trigger */}
+                    <div
+                      className={`flex items-center gap-1 px-1.5 py-1 cursor-pointer
                         font-sans tracking-[0.18em] uppercase
                         transition-colors duration-200
                         ${
                           showServices
                             ? "text-[rgb(207,160,79)] font-semibold"
                             : "text-white hover:text-[rgb(207,160,79)]"
-                        }
-                      `}
-                      aria-expanded={showServices}
-                      aria-haspopup="true"
-                      type="button"
+                        }`}
                     >
                       Services
                       <ChevronDown
                         size={14}
                         className={`ml-1 transition-transform duration-300 ${
-                          showServices ? "rotate-180 text-[rgb(207,160,79)]" : "text-white"
+                          showServices
+                            ? "rotate-180 text-[rgb(207,160,79)]"
+                            : "text-white"
                         }`}
                       />
-                    </button>
+                    </div>
 
+                    {/* Dropdown (gap-safe) */}
                     {showServices && (
-                      <div
-                        className="absolute top-full left-0 mt-3 w-60
-                          bg-[rgb(48,62,73)] border border-[#404040]
-                          rounded-md shadow-xl z-50 overflow-hidden"
-                      >
-                        <button
-                          onClick={() => {
-                            navigate("/services/computer-touch");
-                            setShowServices(false);
-                          }}
-                          className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
-                          type="button"
-                        >
-                          Computer Touch
-                        </button>
+                      <div className="absolute top-full left-0 pt-3 w-60 z-50">
+                        <div className="bg-[rgb(48,62,73)] border border-[#404040] rounded-md shadow-xl overflow-hidden">
+                          <button
+                            onClick={() => {
+                              navigate("/services/computer-touch");
+                              setShowServices(false);
+                            }}
+                            className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
+                          >
+                            Computer Touch
+                          </button>
 
-                        <button
-                          onClick={() => {
-                            navigate("/services/jewellery-repair");
-                            setShowServices(false);
-                          }}
-                          className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
-                          type="button"
-                        >
-                          Jewellery Repair
-                        </button>
+                          <button
+                            onClick={() => {
+                              navigate("/services/jewellery-repair");
+                              setShowServices(false);
+                            }}
+                            className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
+                          >
+                            Jewellery Repair
+                          </button>
 
-                        <button
-                          onClick={() => {
-                            navigate("/services/metal-testing");
-                            setShowServices(false);
-                          }}
-                          className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
-                          type="button"
-                        >
-                          Metal Testing
-                        </button>
+                          <button
+                            onClick={() => {
+                              navigate("/services/metal-testing");
+                              setShowServices(false);
+                            }}
+                            className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
+                          >
+                            Metal Testing
+                          </button>
 
-                        <button
-                          onClick={() => {
-                            navigate("/services/gold-silver-testing");
-                            setShowServices(false);
-                          }}
-                          className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
-                          type="button"
-                        >
-                          Gold & Silver Testing
-                        </button>
+                          <button
+                            onClick={() => {
+                              navigate("/services/gold-silver-testing");
+                              setShowServices(false);
+                            }}
+                            className="block w-full text-left px-4 py-3 hover:bg-black/30 transition-colors"
+                          >
+                            Gold & Silver Testing
+                          </button>
+                        </div>
                       </div>
                     )}
                   </div>
@@ -177,7 +175,7 @@ export default function Navbar() {
           </div>
         </nav>
 
-        {/* Right: prices (mobile) + CTA */}
+        {/* Right: mobile prices + CTA */}
         <div className="flex items-center gap-3">
           <div className="flex md:hidden flex-col text-right text-[11px] leading-tight">
             <span className="text-[rgb(207,160,79)] font-semibold">
