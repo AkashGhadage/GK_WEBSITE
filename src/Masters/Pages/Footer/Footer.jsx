@@ -30,7 +30,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  to="/services/metal-testing"
+                  to="/services/gold-silver-testing"
                   className="text-gray-300 hover:text-[#b79654] transition-colors"
                 >
                   Gold &amp; Silver Testing
@@ -50,6 +50,14 @@ const Footer = () => {
                   className="text-gray-300 hover:text-[#b79654] transition-colors"
                 >
                   Jewellery Repair &amp; Soldering
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services/metal-testing"
+                  className="text-gray-300 hover:text-[#b79654] transition-colors"
+                >
+                  Metal Testing – Accurate & Reliable
                 </Link>
               </li>
             </ul>

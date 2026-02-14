@@ -12,6 +12,7 @@ import {
   Clock,
   Play,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const JewelleryRepair = () => {
   const videoRef = useRef(null);
@@ -194,16 +195,16 @@ const JewelleryRepair = () => {
                 Who is this service for?
               </h2>
               <p className="text-stone-400 mb-6">
-                Expert verification for every need—whether you are an investor,
-                a jeweler, or a family holder.
+                Professional jewellery repairing with expert craftsmanship and
+                complete care.
               </p>
               <div className="grid grid-cols-1 gap-3">
                 {[
-                  "Jewellery buyers & sellers",
-                  "Gold loan & pledge customers",
-                  "Individuals checking inherited jewellery",
-                  "Jewellers & traders",
-                  "Pre-remaking purity clarity",
+                  "Broken chains & necklaces",
+                  "Ring resizing & stone fixing",
+                  "Damaged bangles & bracelets",
+                  "Old jewellery restoration",
+                  "Polishing & finishing services",
                 ].map((item) => (
                   <div
                     key={item}
@@ -217,13 +218,13 @@ const JewelleryRepair = () => {
             </div>
             <div className="text-center md:text-right space-y-6">
               <p className="text-xl font-light italic text-stone-300">
-                "Know the real value of your assets in minutes."
+                "Restore the beauty of your precious memories."
               </p>
               <Link
                 to="/contact"
                 className="inline-block bg-[#b79654] px-10 py-4 rounded-full font-bold hover:bg-[#d4af37] transition-colors"
               >
-                Start Your Test Now
+                Repair My Jewellery
               </Link>
             </div>
           </div>
@@ -233,6 +234,14 @@ const JewelleryRepair = () => {
 
       {/* FAQ */}
       <FAQSection title="Jewellery Repairing FAQs" faqs={globalFaqs} />
+      <a
+        href={whatsappLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+      >
+        <FaWhatsapp className="w-7 h-7 text-white" />
+      </a>
     </div>
   );
 };

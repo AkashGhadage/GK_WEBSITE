@@ -11,6 +11,7 @@ import {
   Clock,
   Play,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const PurityTestingPage = () => {
   const videoRef = useRef(null);
@@ -181,16 +182,16 @@ const PurityTestingPage = () => {
                 Who is this service for?
               </h2>
               <p className="text-stone-400 mb-6">
-                Expert verification for every need—whether you are an investor,
-                a jeweler, or a family holder.
+                Fast and non-destructive XRF purity testing before you buy,
+                sell, or remake.
               </p>
               <div className="grid grid-cols-1 gap-3">
                 {[
-                  "Jewellery buyers & sellers",
-                  "Bullion traders & investors",
-                  "Gold loan & pledge customers",
-                  "Jewellers & retail traders",
-                  "Any Individual with gold or silver assets",
+                  "Customers buying new jewellery",
+                  "People selling gold & silver",
+                  "Before remaking old jewellery",
+                  "Gold investors",
+                  "Jewellers verifying purity",
                 ].map((item) => (
                   <div
                     key={item}
@@ -204,13 +205,13 @@ const PurityTestingPage = () => {
             </div>
             <div className="text-center md:text-right space-y-6">
               <p className="text-xl font-light italic text-stone-300">
-                "Precise testing for lasting confidence."
+                "Test before you trust."
               </p>
               <Link
                 to="/contact"
                 className="inline-block bg-[#b79654] px-10 py-4 rounded-full font-bold hover:bg-[#d4af37] transition-colors"
               >
-                Visit Our Lab
+                Verify Purity Now
               </Link>
             </div>
           </div>
@@ -220,6 +221,14 @@ const PurityTestingPage = () => {
 
       {/* FAQ Section */}
       <FAQSection title="Gold & Silver Purity Testing FAQs" faqs={globalFaqs} />
+      <a
+        href={whatsappLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
+      >
+        <FaWhatsapp className="w-7 h-7 text-white" />
+      </a>
     </div>
   );
 };
