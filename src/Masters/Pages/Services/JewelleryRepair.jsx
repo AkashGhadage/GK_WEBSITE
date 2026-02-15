@@ -59,7 +59,7 @@ const JewelleryRepair = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 py-16 px-4 md:px-8">
+    <div className="min-h-screen bg-gray-100 py-16">
       {/* WhatsApp Button */}
       {/* <div className="fixed bottom-4 right-4 z-50">
         <a

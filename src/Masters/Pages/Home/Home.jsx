@@ -34,7 +34,7 @@ const services = [
   },
   {
     title: "gold and silver purity testing",
-    image: "/goldpurity.png",
+    image: "/goldpurity_1.png",
     desc: "Accurate and reliable purity testing for gold and silver using advanced, non-destructive methods to ensure transparency and trust in every transaction.",
     link: "/services/gold-silver-testing",
   },
@@ -261,11 +261,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <FAQSection title="Common Questions" faqs={globalFaqs} />
 
-      {/* --- FAQ --- */}
-      <div className="pb-16">
-        <FAQSection title="Common Questions" faqs={globalFaqs} />
-      </div>
     </div>
   );
 };

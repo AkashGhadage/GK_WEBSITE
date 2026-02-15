@@ -14,7 +14,7 @@
 //   }, []);
 
 //   return (
-//     <div className="w-full py-8 px-2 sm:px-4 bg-gray-50">
+//     <div className="w-full py-8 px-2 sm:px-4 bg-gray-50">a
 //       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg border border-gray-100 p-4 sm:p-6 md:p-8">
 //         <div
 //           className="elfsight-app-14f0fe9c-a595-4e7b-9a8d-4a111ff89340 w-full"
@@ -29,7 +29,7 @@
 
 
 import React, { useState } from "react";
-import reviewsData from "/Akash/GoldHub/googleReviews.json";
+import reviewsData from "/Akash/GK_WEBSITE/GK_WEBSITE/googleReviews.json";
 
 const GoogleReviews = () => {
   const [current, setCurrent] = useState(0);

@@ -58,7 +58,7 @@ const ComputerTouchPage = () => {
   ];
 
   return (
-    <div className="min-h-screen  bg-gray-100  py-16 px-4 md:px-8">
+    <div className="min-h-screen  bg-gray-100 pt-16 py-16 ">
       <section className="bg-white rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 py-12 px-4 md:px-12 max-w-6xl mx-auto space-y-16">
         {/* Hero Section */}
         <div className="grid gap-12 md:grid-cols-[1.2fr_1fr] items-center">

@@ -45,7 +45,7 @@ const blogPosts = [
       "Simple checks every customer should do before buying gold jewellery, from reading the hallmark correctly to using apps and independent testing centres when in doubt.",
     readTime: "3 min read",
     date: "Dec 2025",
-    image: "/goldpurity.png",
+    image: "/goldpurity_1.png",
   },
 
   {

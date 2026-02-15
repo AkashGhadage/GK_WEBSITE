@@ -56,7 +56,7 @@ const PurityTestingPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#fcfaf7] py-16 px-4 md:px-8">
+    <div className="min-h-screen bg-[#fcfaf7] py-16  ">
       {/* Main Container */}
       <section className="bg-white rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 py-12 px-4 md:px-12 max-w-6xl mx-auto space-y-16">
         {/* Hero Section */}

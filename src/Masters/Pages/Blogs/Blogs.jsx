@@ -35,7 +35,7 @@ const blogPosts = [
       "Simple steps every customer should follow before buying jewellery to avoid losses and confusion later.",
     readTime: "3 min read",
     date: "Dec 2025",
-    image: "/goldpurity.png",
+    image: "/goldpurity_1.png",
   },
   {
     id: 4,
