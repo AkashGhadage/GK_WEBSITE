@@ -164,7 +164,7 @@ const Home = () => {
           ].map((stat, i) => (
             <div
               key={i}
-              className="p-6 md:p-8 text-center border-r last:border-0 border-gray-100 hover:bg-[#CFA04F]/5 transition-colors"
+              className="p-6 md:p-8 text-center border-b md:border-b-0 md:border-r last:border-0 even:border-r-0 md:even:border-r md:last:border-0 border-gray-100 hover:bg-[#CFA04F]/5 transition-colors"
             >
               <p className="text-[#CFA04F] text-2xl md:text-3xl font-bold font-serif">
                 {stat.val}
@@ -184,7 +184,7 @@ const Home = () => {
             <img
               src="/about.jpg"
               alt="Gurukrupa Gold Testing Lab"
-              className="rounded-3xl shadow-lg h-[420px] w-full object-cover"
+              className="rounded-3xl shadow-lg h-[280px] md:h-[420px] w-full object-cover"
             />
             <div className="absolute -bottom-5 -right-5 bg-gradient-to-br from-[#D4AF37] to-[#AA771C] p-5 rounded-2xl hidden md:flex flex-col items-center shadow-xl">
               <p className="text-black font-serif text-3xl font-bold">20+</p>
@@ -334,7 +334,7 @@ const Home = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {benefits.map((benefit, i) => (
               <div
                 key={i}

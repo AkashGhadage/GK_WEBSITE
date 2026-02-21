@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">01</span>
               Information We Collect
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <p>When you use our services or contact us, we may collect:</p>
               <ul className="list-disc pl-5 space-y-2">
                 <li>Your name, phone number, and email address (when you submit a contact form or enquiry).</li>
@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">02</span>
               How We Use Your Information
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <ul className="list-disc pl-5 space-y-2">
                 <li>To respond to your enquiries and provide service-related information.</li>
                 <li>To communicate about your jewellery testing, repair, or bullion orders.</li>
@@ -71,7 +71,7 @@ const PrivacyPolicy = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">03</span>
               Data Protection
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <p>
                 We implement reasonable security measures to protect your
                 personal information from unauthorized access, alteration, or
@@ -87,7 +87,7 @@ const PrivacyPolicy = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">04</span>
               Cookies & Analytics
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <p>
                 Our website may use cookies and analytics tools to understand
                 how visitors interact with our site. This data is anonymized and
@@ -103,7 +103,7 @@ const PrivacyPolicy = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">05</span>
               Third-Party Links
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <p>
                 Our website may contain links to third-party sites (e.g., Google
                 Maps, WhatsApp, Google Reviews). We are not responsible for the
@@ -119,7 +119,7 @@ const PrivacyPolicy = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">06</span>
               Your Rights
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <ul className="list-disc pl-5 space-y-2">
                 <li>You may request access to the personal data we hold about you.</li>
                 <li>You may request correction or deletion of your personal data.</li>

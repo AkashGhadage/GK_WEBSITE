@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="w-full bg-[rgb(23,28,32)] text-gray-200 pt-16 pb-8 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-16">
           
           {/* Brand Column */}
           <div className="flex flex-col gap-6">
@@ -112,7 +112,7 @@ const Footer = () => {
           <p className="text-[10px] tracking-[0.2em] uppercase text-gray-500 text-center md:text-left">
             © {new Date().getFullYear()} Gurukrupa Gold. All rights reserved.
           </p>
-          <div className="flex items-center gap-8 text-[10px] tracking-[0.2em] uppercase text-gray-500 font-bold">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-8 text-[10px] tracking-[0.2em] uppercase text-gray-500 font-bold">
             <Link to="/terms" className="hover:text-[#CFA04F] transition-colors">Terms & Conditions</Link>
             <Link to="/privacy" className="hover:text-[#CFA04F] transition-colors">Privacy Policy</Link>
             <Link to="/blogs" className="hover:text-[#CFA04F] transition-colors">Blog</Link>

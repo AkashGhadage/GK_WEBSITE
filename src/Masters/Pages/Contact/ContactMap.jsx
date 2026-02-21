@@ -45,7 +45,7 @@ const ContactMap = () => {
             <div className="bg-[rgb(207,160,79)] p-3 rounded-full text-white flex-shrink-0 group-hover:scale-110 group-hover:bg-[#CFA04F] transition-all duration-300">
               <MapPin size={24} />
             </div>
-            <p className="text-gray-700 leading-relaxed text-base lg:text-lg max-w-md group-hover:text-[rgb(207,160,79)] group-hover:font-semibold transition-colors duration-300">
+            <p className="text-gray-700 leading-relaxed text-sm sm:text-base lg:text-lg min-w-0 group-hover:text-[rgb(207,160,79)] group-hover:font-semibold transition-colors duration-300">
               Ground Floor, 32/3175, Gali Number 32, below Northern Railway
               Ticket Office, Block 33, Beadonpura, Karol Bagh, New Delhi, Delhi,
               110005, India
@@ -95,7 +95,7 @@ const ContactMap = () => {
             <div className="bg-[rgb(207,160,79)] p-3 rounded-full text-white flex-shrink-0 group-hover:scale-110 group-hover:bg-[#CFA04F] transition-all duration-300">
               <Mail size={24} />
             </div>
-            <p className="text-gray-700 text-lg font-semibold underline hover:no-underline group-hover:text-[rgb(207,160,79)] transition-colors duration-300">
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg font-semibold underline hover:no-underline group-hover:text-[rgb(207,160,79)] transition-colors duration-300 break-all">
               gurukrupagoldtunch@gmail.com
             </p>
           </div>

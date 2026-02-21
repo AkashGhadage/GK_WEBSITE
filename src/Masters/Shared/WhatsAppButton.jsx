@@ -28,16 +28,16 @@ const WhatsAppButton = () => {
   }, [showTooltip]);
 
   return (
-    <div className="fixed bottom-6 right-6 z-[999] flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[999] flex flex-col items-end gap-3">
       {/* Tooltip */}
       {showTooltip && (
-        <div className="animate-fade-in bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 max-w-[240px] relative">
+        <div className="animate-fade-in bg-white rounded-2xl shadow-2xl border border-gray-100 p-4 max-w-[200px] sm:max-w-[240px] relative">
           <button
             onClick={() => {
               setShowTooltip(false);
               setDismissed(true);
             }}
-            className="absolute -top-2 -right-2 w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
+            className="absolute -top-2 -right-2 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
           >
             <X size={12} className="text-gray-500" />
           </button>

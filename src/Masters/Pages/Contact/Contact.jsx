@@ -234,7 +234,7 @@ const Contact = () => {
                   <label className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide">
                     Services Needed <span className="text-red-500">*</span>
                   </label>
-                  <div className="grid grid-cols-2 gap-2.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {serviceOptions.map((service) => (
                       <label
                         key={service}
@@ -323,7 +323,7 @@ const Contact = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="bg-white/90 backdrop-blur-xl rounded-xl p-4 lg:p-5 border border-white/50 shadow-lg">
+                <div className="bg-white/90 backdrop-blur-xl rounded-xl p-3 md:p-4 lg:p-5 border border-white/50 shadow-lg">
                   <h3 className="text-lg lg:text-xl font-serif font-black text-[#b79654] mb-2">
                     Visit Our Lab
                   </h3>
