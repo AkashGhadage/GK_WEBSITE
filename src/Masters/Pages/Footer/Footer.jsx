@@ -113,9 +113,9 @@ const Footer = () => {
             © {new Date().getFullYear()} Gurukrupa Gold. All rights reserved.
           </p>
           <div className="flex items-center gap-8 text-[10px] tracking-[0.2em] uppercase text-gray-500 font-bold">
-            <Link to="/terms" className="hover:text-[#CFA04F] transition-colors">Terms</Link>
-            <Link to="/privacy" className="hover:text-[#CFA04F] transition-colors">Privacy</Link>
-            
+            <Link to="/terms" className="hover:text-[#CFA04F] transition-colors">Terms & Conditions</Link>
+            <Link to="/privacy" className="hover:text-[#CFA04F] transition-colors">Privacy Policy</Link>
+            <Link to="/blogs" className="hover:text-[#CFA04F] transition-colors">Blog</Link>
           </div>
         </div>
       </div>

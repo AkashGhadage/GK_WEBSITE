@@ -1,6 +1,6 @@
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { ChevronDown, ShieldCheck, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 const NavbarComponents = [
   { name: "Home", path: "/home" },
@@ -14,6 +14,7 @@ const NavbarComponents = [
 export default function Navbar() {
   const [showServices, setShowServices] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const navigate = useNavigate();
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -109,18 +110,66 @@ export default function Navbar() {
 
       {/* Mobile Side Menu Overlay */}
       <div className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[2000] transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`} onClick={toggleMobileMenu}>
-        <div className={`absolute right-0 top-0 h-full w-[280px] bg-[rgb(48,62,73)] shadow-2xl transition-transform duration-300 transform ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`} onClick={(e) => e.stopPropagation()}>
-          <div className="flex flex-col p-6 gap-6 mt-10">
-            {NavbarComponents.map((item) => (
-              <NavLink
-                key={item.path}
-                to={item.path}
-                onClick={toggleMobileMenu}
-                className={({ isActive }) => `text-sm font-semibold tracking-widest uppercase ${isActive ? "text-[#CFA04F]" : "text-white"}`}
+        <div className={`absolute right-0 top-0 h-full w-[280px] bg-[rgb(23,28,32)] shadow-2xl transition-transform duration-300 transform ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`} onClick={(e) => e.stopPropagation()}>
+          {/* Close button */}
+          <div className="flex justify-end p-4">
+            <button onClick={toggleMobileMenu} className="text-white/60 hover:text-white p-1">
+              <X size={24} />
+            </button>
+          </div>
+          <div className="flex flex-col px-6 gap-1">
+            {NavbarComponents.map((item) => {
+              if (item.name === "Services") {
+                return (
+                  <div key={item.name}>
+                    <button
+                      onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                      className={`flex items-center justify-between w-full py-3 text-sm font-semibold tracking-widest uppercase ${mobileServicesOpen ? "text-[#CFA04F]" : "text-white"}`}
+                    >
+                      Services
+                      <ChevronDown size={16} className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180" : ""}`} />
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-300 ${mobileServicesOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
+                      <div className="pl-4 pb-2 space-y-1 border-l border-[#CFA04F]/30 ml-2">
+                        {["Computer Touch", "Jewellery Repair", "Metal Testing", "Gold & Silver Testing"].map((sub) => (
+                          <button
+                            key={sub}
+                            onClick={() => {
+                              navigate(`/services/${sub.toLowerCase().replace(/ /g, '-').replace('&', '').replace('--', '-')}`);
+                              setIsMobileMenuOpen(false);
+                              setMobileServicesOpen(false);
+                            }}
+                            className="block w-full text-left py-2 text-xs tracking-widest text-gray-400 hover:text-[#CFA04F] transition-colors uppercase"
+                          >
+                            {sub}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+              return (
+                <NavLink
+                  key={item.path}
+                  to={item.path}
+                  onClick={toggleMobileMenu}
+                  className={({ isActive }) => `py-3 text-sm font-semibold tracking-widest uppercase ${isActive ? "text-[#CFA04F]" : "text-white"}`}
+                >
+                  {item.name}
+                </NavLink>
+              );
+            })}
+
+            {/* Mobile CTA */}
+            <div className="mt-6 pt-6 border-t border-white/10">
+              <a
+                href="tel:+919975796681"
+                className="block w-full text-center py-3 bg-gradient-to-r from-[#D4AF37] to-[#AA771C] text-black font-bold rounded-full text-xs tracking-widest uppercase"
               >
-                {item.name}
-              </NavLink>
-            ))}
+                Call: +91 99757 96681
+              </a>
+            </div>
           </div>
         </div>
       </div>

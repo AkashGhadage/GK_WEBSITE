@@ -57,7 +57,7 @@ const GoogleReviews = () => {
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-gray-900">
+              <h2 className="text-2xl font-serif font-bold text-gray-900">
                 Google Rating
               </h2>
               <div className="flex items-center gap-2">
@@ -161,7 +161,7 @@ const GoogleReviews = () => {
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`h-1.5 transition-all rounded-full ${current === i ? "w-6 bg-blue-500" : "w-1.5 bg-gray-300"}`}
+                className={`h-1.5 transition-all rounded-full ${current === i ? "w-6 bg-[#CFA04F]" : "w-1.5 bg-gray-300"}`}
               />
             ))}
           </div>
@@ -171,7 +171,7 @@ const GoogleReviews = () => {
             href="https://www.google.com/search?sca_esv=bd16726c6a722966&rlz=1C1JJTC_enIN1016IN1016&sxsrf=ANbL-n4xZNdfHAefUxlTZTIJNt5W7UWcCQ:1770362985690&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOUBXp_w3LELRx-rGvyeifYr9_Cp2j-PEdH3xwpaUuvVni-0apowiqU75T3_9SxO8xRAB_tFl7gZJVxYuQ18mMYvVaHLogz723jRVJl16ksjfSrHuwv62DZUOFuQrFc78T2r9-zKr-UOTclWAaHRsBQks4nLO&q=GURUKRUPA+COMPUTERIZED+TUNCH+%26+LASER+SOLDERING+CENTRE+Reviews&sa=X&ved=2ahUKEwjJwIqHrMSSAxXMS2wGHSwbF84Q0bkNegQIJRAF&biw=1366&bih=641&dpr=1"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition-all shadow-lg hover:shadow-xl text-lg"
+            className="inline-flex items-center justify-center px-8 py-3 bg-[#b79654] text-white rounded-full font-medium hover:bg-[#967a42] transition-all shadow-lg hover:shadow-xl text-lg"
           >
             View All Reviews on Google
           </a>
