@@ -19,7 +19,7 @@ export default function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="w-full h-[80px] lg:h-[100px] border-b border-[#3d4a54] shadow-2xl bg-[rgb(48,62,73)] sticky top-0 z-[1000] backdrop-blur-md bg-opacity-98">
+    <header className="w-full h-[80px] lg:h-[100px] border-b border-[#3d4a54] shadow-2xl  bg-[rgb(23,28,32)] sticky top-0 z-[1000] backdrop-blur-md bg-opacity-98">
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 lg:px-8 text-[#e5e5e5]">
 
         {/* Left: Logo & Trust Tagline */}

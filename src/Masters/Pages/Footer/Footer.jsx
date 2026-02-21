@@ -1,185 +1,121 @@
-// src/Masters/Pages/Footer/Footer.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[rgb(48,62,73)] text-gray-200 pt-10 pb-6">
-
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
-        {/* Top: 4 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10 mb-8">
-          {/* Brand + short line */}
-          <div>
-            <h3 className="text-lg font-semibold text-[#b79654] mb-3">
-              GURUKRUPA GOLD
-            </h3>
-            <p className="text-sm text-gray-300 leading-relaxed">
-              Your Trusted Partner
-              <br />
-              for Gold &amp; Silver
+    <footer className="w-full bg-[rgb(23,28,32)] text-gray-200 pt-16 pb-8 border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          
+          {/* Brand Column */}
+          <div className="flex flex-col gap-6">
+            <Link to="/home" className="flex items-center gap-4 group no-underline w-fit">
+              <img
+                src="/GK_LOGO_FINAL.png"
+                alt="Logo"
+                className="h-14 w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="flex flex-col border-l border-white/20 pl-4">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-lg font-light tracking-[0.2em] text-white uppercase leading-none">Gurukrupa</span>
+                  <span className="text-lg font-bold tracking-[0.2em] bg-gradient-to-r from-[#D4AF37] via-[#FBF5B7] to-[#AA771C] bg-clip-text text-transparent uppercase leading-none">Gold</span>
+                </div>
+                <span className="text-[10px] tracking-[0.3em] text-[#CFA04F] uppercase font-semibold mt-2">Testing Lab & Bullion</span>
+              </div>
+            </Link>
+            <p className="text-gray-400 text-sm leading-relaxed tracking-wide italic">
+              "Your trusted partner in precision gold testing and premium bullion investments. Accuracy you can bank on."
             </p>
           </div>
 
-          {/* SERVICES (2nd column) */}
+          {/* Services Column */}
           <div>
-            <h4 className="text-sm font-semibold tracking-[0.18em] uppercase text-gray-300 mb-3">
-              Services
+            <h4 className="text-xs font-bold tracking-[0.3em] uppercase text-white mb-6 border-b border-[#CFA04F]/30 pb-2 inline-block">
+              Expertise
             </h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  to="/services/gold-silver-testing"
-                  className="text-gray-300 hover:text-[#b79654] transition-colors"
-                >
-                  Gold &amp; Silver Testing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/computer-touch"
-                  className="text-gray-300 hover:text-[#b79654] transition-colors"
-                >
-                  Computer Touch (Tunch)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/jewellery-repair"
-                  className="text-gray-300 hover:text-[#b79654] transition-colors"
-                >
-                  Jewellery Repair &amp; Soldering
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services/metal-testing"
-                  className="text-gray-300 hover:text-[#b79654] transition-colors"
-                >
-                  Metal Testing – Accurate & Reliable
-                </Link>
-              </li>
+            <ul className="space-y-4 text-sm font-light">
+              {[
+                { name: "Gold & Silver Testing", path: "/services/gold-silver-testing" },
+                { name: "Computer Touch (Tunch)", path: "/services/computer-touch" },
+                { name: "Jewellery Repair", path: "/services/jewellery-repair" },
+                { name: "Metal Analysis", path: "/services/metal-testing" }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link to={item.path} className="text-gray-400 hover:text-[#CFA04F] transition-all flex items-center gap-2 group">
+                    <span className="h-[1px] w-0 bg-[#CFA04F] group-hover:w-3 transition-all"></span>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Quick links (3rd column) */}
+          {/* Quick Links Column */}
           <div>
-            <h4 className="text-sm font-semibold tracking-[0.18em] uppercase text-gray-300 mb-3">
+            <h4 className="text-xs font-bold tracking-[0.3em] uppercase text-white mb-6 border-b border-[#CFA04F]/30 pb-2 inline-block">
               Quick Links
             </h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  to="/home"
-                  className="text-gray-300 hover:text-[#b79654] transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-gray-300 hover:text-[#b79654] transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/blogs"
-                  className="text-gray-300 hover:text-[#b79654] transition-colors"
-                >
-                  Blogs &amp; Guides
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-gray-300 hover:text-[#b79654] transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
+            <ul className="space-y-4 text-sm font-light">
+              {['Home', 'About', 'Gold & Silver', 'Contact'].map((link) => (
+                <li key={link}>
+                  <Link to={`/${link.toLowerCase().replace(/ /g, '_')}`} className="text-gray-400 hover:text-[#CFA04F] transition-all">
+                    {link}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact (4th column) */}
-          <div>
-            <h4 className="text-sm font-semibold tracking-[0.18em] uppercase text-gray-300 mb-3">
-              Contact Us
+          {/* Contact Column */}
+          <div className="flex flex-col gap-4">
+            <h4 className="text-xs font-bold tracking-[0.3em] uppercase text-white mb-2 border-b border-[#CFA04F]/30 pb-2 inline-block">
+              HQ Office
             </h4>
-            <p className="text-sm text-gray-300 mb-3 leading-relaxed">
-              Office: Ground Floor, 32/3175
-              <br />
-              Below Northern Railway Ticket Office,
-              <br />
-              Block 33, Beadonpura, Karol Bagh,
-              <br />
-              New Delhi, Delhi 110005, India
-            </p>
+            <div className="space-y-4 text-sm font-light">
+              <div className="flex gap-3 items-start">
+                <FaMapMarkerAlt className="text-[#CFA04F] mt-1 shrink-0" />
+                <p className="text-gray-400 leading-relaxed">
+                  Ground Floor, 32/3175, Karol Bagh, <br /> New Delhi 110005
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <FaPhoneAlt className="text-[#CFA04F] shrink-0" />
+                <a href="tel:+919075516373" className="text-gray-400 hover:text-white transition-colors tracking-widest">+91 90755 16373</a>
+              </div>
+               <div className="flex gap-3 items-center">
+                <FaPhoneAlt className="text-[#CFA04F] shrink-0" />
+                <a href="tel:+919975796681" className="text-gray-400 hover:text-white transition-colors tracking-widest">+91 99757 96681</a>
+              </div>
+              <div className="flex gap-3 items-center">
+                <FaEnvelope className="text-[#CFA04F] shrink-0" />
+                <a href="mailto:gurukrupagoldtunch@gmail.com" className="text-gray-400 hover:text-white transition-colors truncate">gurukrupagoldtunch@gmail.com</a>
+              </div>
+            </div>
 
-            <p className="text-sm text-gray-300">
-              Phone:{" "}
-              <a
-                href="tel:+919075516373"
-                className="text-gray-300 hover:text-[#b79654] transition-colors"
-              >
-                +91 90755 16373
+            {/* Social Icons */}
+            <div className="flex items-center gap-4 mt-6">
+              <a href="https://wa.me/919075516373" target="_blank" className="p-3 bg-white/5 rounded-full text-[#CFA04F] hover:bg-[#CFA04F] hover:text-black transition-all">
+                <FaWhatsapp size={18} />
               </a>
-              {" / "}
-              <a
-                href="tel:+917011675610"
-                className="text-gray-300 hover:text-[#b79654] transition-colors"
-              >
-                +91 70116 75610
-              </a>
-            </p>
-
-            <p className="text-sm text-gray-300 mt-2 mb-4">
-              Email:{" "}
-              <a
-                href="mailto:gurukrupagoldtunch@gmail.com"
-                className="text-gray-300 hover:text-[#b79654] transition-colors"
-              >
-                gurukrupagoldtunch@gmail.com
-              </a>
-            </p>
-
-            <div className="flex items-center gap-3">
-              <a
-                href="https://wa.me/919075516373"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center justify-center w-9 h-9 rounded-full bg-[#b79654] text-black hover:bg-white transition-colors"
-              >
-                <FaWhatsapp className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center justify-center w-9 h-9 rounded-full border border-[#b79654] text-[#b79654] hover:bg-white hover:text-black transition-colors"
-              >
-                <FaInstagram className="w-4 h-4" />
+              <a href="#" className="p-3 bg-white/5 rounded-full text-[#CFA04F] hover:bg-[#CFA04F] hover:text-black transition-all">
+                <FaInstagram size={18} />
               </a>
             </div>
           </div>
+
         </div>
 
-        {/* Bottom line */}
-        <div className="border-t border-white/10 pt-4 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} Gurukrupa Gold Testing &amp; Laser
-            Soldering. All rights reserved.
+        {/* Bottom Bar */}
+        <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-[10px] tracking-[0.2em] uppercase text-gray-500 text-center md:text-left">
+            © {new Date().getFullYear()} Gurukrupa Gold. All rights reserved.
           </p>
-          <div className="flex items-center gap-4 text-xs text-gray-400">
-            <button className="hover:text-[#b79654] transition-colors">
-              Terms
-            </button>
-            <button className="hover:text-[#b79654] transition-colors">
-              Privacy
-            </button>
+          <div className="flex items-center gap-8 text-[10px] tracking-[0.2em] uppercase text-gray-500 font-bold">
+            <Link to="/terms" className="hover:text-[#CFA04F] transition-colors">Terms</Link>
+            <Link to="/privacy" className="hover:text-[#CFA04F] transition-colors">Privacy</Link>
+            
           </div>
         </div>
       </div>

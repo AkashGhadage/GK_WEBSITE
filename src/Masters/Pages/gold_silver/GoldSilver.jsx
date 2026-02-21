@@ -111,7 +111,7 @@ export default function GoldSilver() {
               <PhoneCall size={24} />
             </div>
             <h4 className="text-xl font-bold uppercase tracking-tight">Direct Booking</h4>
-            <p className="text-slate-800 font-black text-lg">+91 98XXX XXXXX</p>
+            <p className="text-slate-800 font-black text-lg">+91 9075516373 , +91 9975796681</p>
             <p className="text-slate-500 text-sm">Call us for bulk inquiries, live spot rates, and vault collection details.</p>
           </div>
 

@@ -304,7 +304,7 @@ const AboutPage = () => {
                     Purity checks without a single scratch.
                   </p>
                 </div>
-                <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-2xl transition-transform hover:scale-105 duration-300">
+                <div className=" bg-[rgb(23,28,32)] text-white p-6 rounded-2xl shadow-2xl transition-transform hover:scale-105 duration-300">
                   <Sparkles className="w-8 h-8 text-[#d4af37] mb-4" />
                   <h3 className="font-bold text-lg">Laser Tech</h3>
                   <p className="text-sm text-gray-400">
@@ -313,7 +313,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="bg-gray-900 text-white p-6 rounded-2xl shadow-2xl hover:scale-105 duration-300">
+                <div className="bg-[rgb(23,28,32)] text-white p-6 rounded-2xl shadow-2xl hover:scale-105 duration-300">
                   <Users className="w-8 h-8 text-[#d4af37] mb-4" />
                   <h3 className="font-bold">Trust First</h3>
                   <p className="text-sm text-gray-400">
