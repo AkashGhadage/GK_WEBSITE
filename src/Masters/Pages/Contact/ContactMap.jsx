@@ -32,7 +32,7 @@ const ContactMap = () => {
 
         {/* Contact Details */}
         <div className="space-y-6">
-          <h2 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-gray-900 to-slate-800 bg-clip-text text-transparent">
+          <h2 className="text-3xl lg:text-4xl font-serif font-bold text-gray-900">
             Head Office
           </h2>
 
@@ -42,7 +42,7 @@ const ContactMap = () => {
             onClick={handleCopyAddress}
             title="Click to copy address"
           >
-            <div className="bg-[rgb(207,160,79)] p-3 rounded-full text-white flex-shrink-0 group-hover:scale-110 group-hover:bg-yellow-400 transition-all duration-300">
+            <div className="bg-[rgb(207,160,79)] p-3 rounded-full text-white flex-shrink-0 group-hover:scale-110 group-hover:bg-[#CFA04F] transition-all duration-300">
               <MapPin size={24} />
             </div>
             <p className="text-gray-700 leading-relaxed text-base lg:text-lg max-w-md group-hover:text-[rgb(207,160,79)] group-hover:font-semibold transition-colors duration-300">
@@ -57,7 +57,7 @@ const ContactMap = () => {
             className="flex items-start gap-4 group cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-lg p-2 rounded-xl hover:bg-gradient-to-r hover:from-[rgb(207,160,79)]/10"
             title="Click individual numbers to copy"
           >
-            <div className="bg-[rgb(207,160,79)] p-3 rounded-full text-white flex-shrink-0 group-hover:scale-110 group-hover:bg-yellow-400 transition-all duration-300">
+            <div className="bg-[rgb(207,160,79)] p-3 rounded-full text-white flex-shrink-0 group-hover:scale-110 group-hover:bg-[#CFA04F] transition-all duration-300">
               <Phone size={24} />
             </div>
             <div className="space-y-3">
@@ -92,7 +92,7 @@ const ContactMap = () => {
               navigator.clipboard.writeText("gurukrupagoldtunch@gmail.com")
             }
           >
-            <div className="bg-[rgb(207,160,79)] p-3 rounded-full text-white flex-shrink-0 group-hover:scale-110 group-hover:bg-yellow-400 transition-all duration-300">
+            <div className="bg-[rgb(207,160,79)] p-3 rounded-full text-white flex-shrink-0 group-hover:scale-110 group-hover:bg-[#CFA04F] transition-all duration-300">
               <Mail size={24} />
             </div>
             <p className="text-gray-700 text-lg font-semibold underline hover:no-underline group-hover:text-[rgb(207,160,79)] transition-colors duration-300">

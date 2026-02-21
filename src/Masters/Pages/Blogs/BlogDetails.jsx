@@ -161,7 +161,7 @@ const BlogDetails = () => {
             {/* Title */}
 
             <h1
-              className="text-2xl md:text-3xl font-bold mb-4
+              className="text-2xl md:text-3xl font-serif font-bold mb-4
              text-[#b79654]"
             >
               {post.title}

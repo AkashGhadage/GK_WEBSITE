@@ -89,7 +89,7 @@ const MetalTesting = () => {
               ].map((tag) => (
                 <span
                   key={tag}
-                  className="px-4 py-1.5 rounded-full bg-stone-100 text-stone-700 text-xs font-medium border border-stone-200"
+                  className="px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 text-xs font-medium border border-gray-200"
                 >
                   ✦ {tag}
                 </span>
@@ -113,7 +113,7 @@ const MetalTesting = () => {
           </div>
 
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#b79654] to-[#e4cf9c] rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#b79654] to-[#D4AF37] rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
 
             <div className="relative rounded-[1.8rem] overflow-hidden bg-black aspect-video shadow-2xl">
               <video
@@ -157,7 +157,7 @@ const MetalTesting = () => {
                   key={i}
                   className="p-8 bg-white border border-gray-100 rounded-3xl hover:shadow-xl transition-all"
                 >
-                  <div className="mb-5 p-3 rounded-2xl bg-[#fcfaf7] w-fit">
+                  <div className="mb-5 p-3 rounded-2xl bg-gray-50 w-fit">
                     <Icon className="w-6 h-6 text-[#b79654]" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-900 mb-3">
@@ -171,13 +171,13 @@ const MetalTesting = () => {
             })}
           </div>
         </div>
-        <div className="bg-stone-900 rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden">
+        <div className="bg-[rgb(23,28,32)] rounded-[2.5rem] p-8 md:p-12 text-white relative overflow-hidden">
           <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-2xl font-serif font-bold mb-4">
                 Who is this service for?
               </h2>
-              <p className="text-stone-400 mb-6">
+              <p className="text-gray-400 mb-6">
                 Professional metal identification and purity testing for all
                 valuable items.
               </p>
@@ -191,7 +191,7 @@ const MetalTesting = () => {
                 ].map((item) => (
                   <div
                     key={item}
-                    className="flex items-center gap-3 text-stone-200"
+                    className="flex items-center gap-3 text-gray-300"
                   >
                     <CheckCircle className="w-4 h-4 text-[#b79654]" />
                     <span className="text-sm">{item}</span>
@@ -200,7 +200,7 @@ const MetalTesting = () => {
               </div>
             </div>
             <div className="text-center md:text-right space-y-6">
-              <p className="text-xl font-light italic text-stone-300">
+              <p className="text-xl font-light italic text-gray-400">
                 "Know exactly what metal you own."
               </p>
               <Link
@@ -217,14 +217,6 @@ const MetalTesting = () => {
 
       {/* FAQ */}
       <FAQSection title="Metal Testing FAQs" faqs={globalFaqs} />
-      <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-      >
-        <FaWhatsapp className="w-7 h-7 text-white" />
-      </a>
     </div>
   );
 };
