@@ -30,7 +30,7 @@ const TermsConditions = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">01</span>
               General Terms
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <p>
                 By using the services of Gurukrupa Computerized Tunch & Laser
                 Soldering Centre ("Gurukrupa Gold"), you agree to these Terms &
@@ -52,7 +52,7 @@ const TermsConditions = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">02</span>
               Gold & Silver Purity Testing Reports
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <p>
                 Purity testing is performed using advanced non-destructive XRF
                 (X-Ray Fluorescence) technology. Results are based on surface-level
@@ -93,7 +93,7 @@ const TermsConditions = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">03</span>
               Laser Soldering & Jewellery Repair
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <ul className="list-disc pl-5 space-y-2">
                 <li>
                   All repair work is performed by experienced craftsmen using
@@ -127,7 +127,7 @@ const TermsConditions = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">04</span>
               Bullion Sales Terms
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <ul className="list-disc pl-5 space-y-2">
                 <li>
                   Gold and silver bullion prices are based on live MCX and
@@ -162,7 +162,7 @@ const TermsConditions = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">05</span>
               Limitation of Liability
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <ul className="list-disc pl-5 space-y-2">
                 <li>
                   Gurukrupa Gold shall not be liable for any indirect,
@@ -188,7 +188,7 @@ const TermsConditions = () => {
               <span className="text-[#CFA04F] font-serif italic text-3xl">06</span>
               Dispute Resolution
             </h2>
-            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-10">
+            <div className="space-y-3 text-gray-600 text-sm leading-relaxed pl-4 md:pl-10">
               <p>
                 Any disputes arising out of these terms shall be subject to the
                 exclusive jurisdiction of the courts in New Delhi, India. We

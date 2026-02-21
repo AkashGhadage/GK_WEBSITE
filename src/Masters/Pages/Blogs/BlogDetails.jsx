@@ -186,7 +186,7 @@ const BlogDetails = () => {
                 <button
                   type="button"
                   onClick={handleCopyLink}
-                  className="flex items-center justify-center w-8 h-8 rounded-full bg-[#eeeeee] text-black hover:bg-[#e0e0e0] transition-colors"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black hover:bg-[#e0e0e0] transition-colors"
                   aria-label="Copy link"
                 >
                   <FiLink className="w-4 h-4" />

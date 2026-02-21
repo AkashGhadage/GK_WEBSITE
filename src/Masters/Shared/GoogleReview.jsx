@@ -27,21 +27,50 @@
 
 // export default GoogleReview;
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import reviewsData from "../../../googleReviews.json";
 
 const GoogleReviews = () => {
-  const [current, setCurrent] = useState(0);
-  // We use a percentage-based offset or visible count for better responsiveness
   const totalReviews = reviewsData.reviews.length;
 
-  const next = () => {
-    setCurrent((prev) => (prev === totalReviews - 1 ? 0 : prev + 1));
+  // Responsive visible count
+  const getVisibleCount = () => {
+    if (typeof window === "undefined") return 1;
+    if (window.innerWidth >= 1024) return 3;
+    if (window.innerWidth >= 768) return 2;
+    return 1;
   };
 
-  const prev = () => {
-    setCurrent((prev) => (prev === 0 ? totalReviews - 1 : prev - 1));
-  };
+  const [visibleCount, setVisibleCount] = useState(getVisibleCount);
+  const [current, setCurrent] = useState(0);
+  const maxIndex = Math.max(0, totalReviews - visibleCount);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newCount = getVisibleCount();
+      setVisibleCount(newCount);
+      setCurrent((prev) => Math.min(prev, Math.max(0, totalReviews - newCount)));
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [totalReviews]);
+
+  const next = useCallback(() => {
+    setCurrent((prev) => (prev >= maxIndex ? 0 : prev + 1));
+  }, [maxIndex]);
+
+  const prev = useCallback(() => {
+    setCurrent((prev) => (prev <= 0 ? maxIndex : prev - 1));
+  }, [maxIndex]);
+
+  // Auto-play
+  useEffect(() => {
+    const timer = setInterval(next, 5000);
+    return () => clearInterval(timer);
+  }, [next]);
+
+  const totalPages = Math.ceil(totalReviews / visibleCount);
+  const currentPage = Math.min(Math.floor(current / visibleCount), totalPages - 1);
 
   return (
     <section className="py-16 bg-[#f9f9f9]">
@@ -91,13 +120,13 @@ const GoogleReviews = () => {
             <div
               className="flex transition-transform duration-500 ease-out"
               style={{
-                transform: `translateX(-${current * (100 / (window.innerWidth < 768 ? 1 : 3))}%)`,
+                transform: `translateX(-${current * (100 / visibleCount)}%)`,
               }}
             >
               {reviewsData.reviews.map((item, index) => (
                 <div
                   key={index}
-                  className="min-w-full md:min-w-[33.333%] px-3 flex"
+                  className="min-w-full md:min-w-[50%] lg:min-w-[33.333%] px-3 flex"
                 >
                   <div className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-all flex flex-col w-full relative">
                     {/* Google Icon on Card */}
@@ -144,24 +173,24 @@ const GoogleReviews = () => {
           {/* Styled Navigation Arrows */}
           <button
             onClick={prev}
-            className="absolute -left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute left-1 md:-left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
           >
             <span className="text-xl">❮</span>
           </button>
           <button
             onClick={next}
-            className="absolute -right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute right-1 md:-right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-xl border border-gray-100 flex items-center justify-center z-10 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
           >
             <span className="text-xl">❯</span>
           </button>
 
           {/* Pagination Dots */}
           <div className="flex justify-center gap-2 mt-6">
-            {reviewsData.reviews.map((_, i) => (
+            {Array.from({ length: totalPages }).map((_, i) => (
               <button
                 key={i}
-                onClick={() => setCurrent(i)}
-                className={`h-1.5 transition-all rounded-full ${current === i ? "w-6 bg-[#CFA04F]" : "w-1.5 bg-gray-300"}`}
+                onClick={() => setCurrent(i * visibleCount)}
+                className={`h-1.5 transition-all rounded-full ${currentPage === i ? "w-6 bg-[#CFA04F]" : "w-1.5 bg-gray-300"}`}
               />
             ))}
           </div>

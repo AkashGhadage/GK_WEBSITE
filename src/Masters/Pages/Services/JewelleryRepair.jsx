@@ -75,11 +75,11 @@ const JewelleryRepair = () => {
         </a>
       </div> */}
 
-      <section className="bg-white rounded-[2rem] shadow-xl border border-gray-100 py-12 px-4 md:px-12 max-w-6xl mx-auto space-y-16">
+      <section className="bg-white rounded-2xl md:rounded-[2rem] shadow-xl border border-gray-100 py-12 px-4 md:px-12 max-w-6xl mx-auto space-y-16">
         {/* Breadcrumb */}
 
         {/* Hero Section */}
-        <div className="grid gap-12 md:grid-cols-[1.2fr_1fr] items-center">
+        <div className="grid gap-8 md:gap-12 md:grid-cols-[1.2fr_1fr] items-center">
           <div>
             <span className="text-[10px] font-bold tracking-[0.3em] text-[#b79654] uppercase mb-4 block">
               Jewellery Care

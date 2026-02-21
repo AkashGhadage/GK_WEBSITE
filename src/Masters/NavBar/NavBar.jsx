@@ -45,10 +45,10 @@ export default function Navbar() {
 
             {/* The Trust Tagline */}
             <div className="mt-1 lg:mt-2 flex flex-col items-center w-full text-center">
-              <span className="block text-[6px] lg:text-[9px] tracking-[0.2em] lg:tracking-[0.35em] text-gray-400 uppercase font-light leading-tight">
+              <span className="block text-[8px] sm:text-[9px] lg:text-[9px] tracking-[0.2em] lg:tracking-[0.35em] text-gray-400 uppercase font-light leading-tight">
                 Your Trusted Partner
               </span>
-              <span className="block text-[7px] lg:text-[11px] tracking-[0.15em] lg:tracking-[0.25em] text-[#CFA04F] uppercase font-semibold leading-tight mt-0.5">
+              <span className="block text-[9px] sm:text-[10px] lg:text-[11px] tracking-[0.15em] lg:tracking-[0.25em] text-[#CFA04F] uppercase font-semibold leading-tight mt-0.5">
                 For Gold & Silver
               </span>
             </div>

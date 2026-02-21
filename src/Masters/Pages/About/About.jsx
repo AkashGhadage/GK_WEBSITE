@@ -61,8 +61,8 @@ const AboutPage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4 pt-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="space-y-4 pt-0 md:pt-12">
                 <div className="bg-gray-100 p-6 rounded-2xl hover:shadow-xl transition-shadow border hover:scale-105 duration-300 border-gray-200">
                   <ShieldCheck className="w-8 h-8 text-[#b79654] mb-4" />
                   <h3 className="font-bold">XRF Testing</h3>
@@ -132,7 +132,7 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div className="space-y-8">
               <h3 className="text-xl font-bold flex items-center gap-3">
                 <span className="w-8 h-[1px] bg-[#b79654]"></span> What we do
@@ -156,7 +156,7 @@ const AboutPage = () => {
               </ul>
             </div>
 
-            <div className="bg-white p-10 rounded-3xl shadow-sm border border-gray-200">
+            <div className="bg-white p-6 md:p-10 rounded-3xl shadow-sm border border-gray-200">
               <h3 className="text-xl font-bold mb-6">Who we serve</h3>
               <div className="space-y-6 text-gray-600">
                 <p className="flex gap-4">

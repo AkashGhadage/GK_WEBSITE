@@ -22,7 +22,7 @@ export default function GoldSilver() {
       
       {/* --- Section Header --- */}
       <div className="max-w-7xl mx-auto px-4 text-center mb-16">
-        <h1 className="text-4xl lg:text-5xl font-serif font-black tracking-tight text-gray-900 uppercase mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-black tracking-tight text-gray-900 uppercase mb-4">
           Investment <span className="text-[#AA771C]">Bullion</span>
         </h1>
         <p className="text-gray-500 max-w-2xl mx-auto text-sm lg:text-base leading-relaxed">
@@ -38,7 +38,7 @@ export default function GoldSilver() {
             <button
               key={cat}
               onClick={() => setActiveTab(cat)}
-              className={`px-10 py-3 rounded-xl text-xs font-bold uppercase tracking-widest transition-all
+              className={`px-6 sm:px-10 py-3 rounded-xl text-xs font-bold uppercase tracking-widest transition-all
                 ${activeTab === cat ? "bg-[rgb(23,28,32)] text-white shadow-lg" : "text-gray-400 hover:bg-gray-50"}`}
             >
               {cat}
@@ -91,7 +91,7 @@ export default function GoldSilver() {
 
       {/* --- Contact & Availability Details Section --- */}
       <div className="max-w-7xl mx-auto px-4 mt-20">
-        <div className="bg-white rounded-[40px] p-8 lg:p-12 shadow-sm border border-gray-100 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="bg-white rounded-3xl lg:rounded-[40px] p-5 sm:p-8 lg:p-12 shadow-sm border border-gray-100 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           
           {/* Availability Info */}
           <div className="space-y-4">
@@ -111,7 +111,11 @@ export default function GoldSilver() {
               <PhoneCall size={24} />
             </div>
             <h4 className="text-xl font-bold uppercase tracking-tight">Direct Booking</h4>
-            <p className="text-gray-800 font-black text-lg">+91 9075516373 , +91 9975796681</p>
+            <p className="text-gray-800 font-black text-base sm:text-lg">
+              +91 9075516373<br className="sm:hidden" />
+              <span className="hidden sm:inline"> , </span>
+              +91 9975796681
+            </p>
             <p className="text-gray-500 text-sm">Call us for bulk inquiries, live spot rates, and vault collection details.</p>
           </div>
 

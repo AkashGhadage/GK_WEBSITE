@@ -58,9 +58,9 @@ const PurityTestingPage = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-16  ">
       {/* Main Container */}
-      <section className="bg-white rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 py-12 px-4 md:px-12 max-w-6xl mx-auto space-y-16">
+      <section className="bg-white rounded-2xl md:rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 py-12 px-4 md:px-12 max-w-6xl mx-auto space-y-16">
         {/* Hero Section */}
-        <div className="grid gap-12 md:grid-cols-[1.2fr_1fr] items-center">
+        <div className="grid gap-8 md:gap-12 md:grid-cols-[1.2fr_1fr] items-center">
           <div>
             <span className="text-[10px] font-bold tracking-[0.3em] text-[#b79654] uppercase mb-4 block">
               Professional Lab Services

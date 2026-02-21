@@ -27,6 +27,7 @@ body {
   margin: 0;
   background-color: #ffffff;
   color: #1a1a1a;
+  overflow-x: hidden;
 }
 
 a {
@@ -51,6 +52,12 @@ a {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #AA771C;
+}
+
+/* Firefox scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #CFA04F #f1f1f1;
 }
 
 /* ===== Animations ===== */
@@ -111,9 +118,4 @@ a {
 ::selection {
   background-color: #CFA04F;
   color: #fff;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
 }
