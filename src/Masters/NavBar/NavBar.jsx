@@ -6,7 +6,7 @@ const NavbarComponents = [
   { name: "Home", path: "/home" },
   { name: "About", path: "/about" },
   { name: "Services", path: "/services" },
-  { name: "Gallery", path: "/gallary" },
+  { name: "Gold & Silver", path: "/gold_silver" },
   { name: "Blogs", path: "/blogs" },
   { name: "Contact", path: "/contact" },
 ];
@@ -98,10 +98,7 @@ export default function Navbar() {
 
         {/* Right: Security Badge (Desktop) & Mobile Toggle */}
         <div className="flex items-center gap-3">
-          <div className="hidden lg:flex items-center gap-2 px-4 py-2 border border-[#CFA04F]/20 rounded-sm bg-[#CFA04F]/5">
-            <ShieldCheck size={16} className="text-[#CFA04F]" />
-            <span className="text-[10px] tracking-[0.2em] text-gray-300 uppercase">Secure Testing</span>
-          </div>
+          
           
           {/* Mobile Menu Button */}
           <button onClick={toggleMobileMenu} className="md:hidden text-white p-2">
