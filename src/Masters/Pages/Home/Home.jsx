@@ -109,7 +109,7 @@ const Home = () => {
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2 mb-8">
             <FaCheckCircle className="text-[#25D366] text-sm" />
             <span className="text-white/90 text-xs font-medium tracking-wide">
-              Trusted by 50,000+ Customers Across India
+              Trusted by 50,000+ Customers Across Delhi
             </span>
           </div>
 
@@ -157,10 +157,10 @@ const Home = () => {
       <section className="relative z-30 -mt-16 max-w-4xl mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-100">
           {[
-            { label: "Years Experience", val: "20+" },
-            { label: "Testing Accuracy", val: "99.9%" },
+            { label: "Years Experience", val: "5+" },
+            { label: "Testing Accuracy", val: "99.99%" },
             { label: "Purity Checks Done", val: "50,000+" },
-            { label: "Happy Clients Daily", val: "100+" },
+            { label: "Happy Clients Daily", val: "1000+" },
           ].map((stat, i) => (
             <div
               key={i}

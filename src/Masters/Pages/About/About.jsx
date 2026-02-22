@@ -50,7 +50,7 @@ const AboutPage = () => {
               </h2>
               <div className="w-20 h-1 bg-[#b79654]"></div>
               <p className="text-gray-600 leading-relaxed text-lg">
-                We built this centre so that people have a place where their
+                We built this lab so that people have a place where their
                 gold is checked and repaired with the same seriousness they feel
                 for it. We use XRF technology — the gold standard in purity
                 testing — to ensure you leave with absolute certainty.
@@ -67,12 +67,13 @@ const AboutPage = () => {
                   <ShieldCheck className="w-8 h-8 text-[#b79654] mb-4" />
                   <h3 className="font-bold">XRF Testing</h3>
                   <p className="text-sm text-gray-500">
-                    Purity checks without a single scratch.
+                    Accurate gold and silver  Purity check.
+                    Fast, reliable results you can see instantly.
                   </p>
                 </div>
                 <div className="bg-[rgb(23,28,32)] text-white p-6 rounded-2xl shadow-2xl transition-transform hover:scale-105 duration-300">
                   <Sparkles className="w-8 h-8 text-[#d4af37] mb-4" />
-                  <h3 className="font-bold text-lg">Laser Tech</h3>
+                  <h3 className="font-bold text-lg">Laser Technology</h3>
                   <p className="text-sm text-gray-400">
                     Precision soldering for delicate pieces.
                   </p>
@@ -83,7 +84,7 @@ const AboutPage = () => {
                   <Users className="w-8 h-8 text-[#d4af37] mb-4" />
                   <h3 className="font-bold">Trust First</h3>
                   <p className="text-sm text-gray-400">
-                    Serving families and jewellers since day one.
+                    Serving families, jewellers, and bullion traders with honesty from day one.
                   </p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-2xl hover:shadow-xl transition-shadow border hover:scale-105 duration-300 border-gray-200">
@@ -103,7 +104,7 @@ const AboutPage = () => {
       <section className="relative w-full h-[400px] flex items-center justify-center">
         <div className="absolute inset-0">
           <img
-            src="/about.jpg"
+            src="/about_old.jpg"
             alt="Jewellery Testing"
             className="w-full h-full object-cover"
           />
@@ -193,39 +194,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* ═══════════ FINAL CTA ═══════════ */}
-      <section className="py-20 bg-gray-900 relative overflow-hidden">
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-serif text-white mb-8 leading-tight">
-            Ready to get the{" "}
-            <span className="text-[#d4af37]">absolute truth</span> about your
-            gold?
-          </h2>
-          <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
-            Whether you are selling, pledging, buying old jewellery, checking
-            family gold, or repairing a chain — one visit to Gurukrupa gives you
-            clear information about purity and repair options.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Link
-              to="/contact"
-              className="group px-8 py-4 bg-gradient-to-r from-[#D4AF37] to-[#AA771C] text-black font-bold rounded-full flex items-center gap-2 hover:shadow-xl hover:shadow-[#CFA04F]/30 transition-all"
-            >
-              Visit Our Centre
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <a
-              href="https://wa.me/919975796681?text=Hello%2C%20I%20want%20to%20know%20more%20about%20Gurukrupa%20Gold."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 border border-white/30 text-white font-bold rounded-full hover:bg-white hover:text-black transition-all"
-            >
-              Consult via WhatsApp
-            </a>
-          </div>
-        </div>
-        <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#b79654]/10 rounded-full blur-3xl"></div>
-      </section>
+      
     </div>
   );
 };
