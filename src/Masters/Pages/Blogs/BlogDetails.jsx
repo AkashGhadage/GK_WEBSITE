@@ -57,7 +57,7 @@ const blogPosts = [
       "Understand key methods like hallmark inspection, touchstone tests, density checks, and advanced machine testing so you know how purity is verified.",
     readTime: "4 min read",
     date: "Dec 2025",
-    image: "/different_method.png",
+    image: "/puritygold.png",
   },
   {
     id: 5,

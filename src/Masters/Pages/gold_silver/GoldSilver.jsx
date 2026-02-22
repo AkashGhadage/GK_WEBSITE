@@ -3,14 +3,14 @@ import { PhoneCall, ShieldCheck, MapPin, Clock, CheckCircle2 } from "lucide-reac
 
 const bullionData = {
   gold: [
-    { id: 1, weight: "5 GM", purity: "999.9 Purity", img: "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&q=80&w=400", stock: "Available" },
-    { id: 2, weight: "10 GM", purity: "999.9 Purity", img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=400", stock: "Available" },
-    { id: 3, weight: "100 GM", purity: "999.9 Purity", img: "https://images.unsplash.com/photo-1618403088890-3d9ff6f4c844?auto=format&fit=crop&q=80&w=400", stock: "Limited Stock" },
-    { id: 4, weight: "1 KG", purity: "999.9 Purity", img: "https://images.unsplash.com/photo-1581067723215-641b489f9c91?auto=format&fit=crop&q=80&w=400", stock: "Call for Quote" },
+    { id: 1, weight: "5 GM", purity: "999.9 Purity", img: "/fivegram.png", stock: "Available" },
+    { id: 2, weight: "10 GM", purity: "999.9 Purity", img: "/tengram.png", stock: "Available" },
+    { id: 3, weight: "100 GM", purity: "999.9 Purity", img: "/hundreadgram.png", stock: "Limited Stock" },
+    { id: 4, weight: "1 KG", purity: "999.9 Purity", img: "/onekg.png", stock: "Call for Quote" },
   ],
   silver: [
-    { id: 5, weight: "100 GM", purity: "999 Purity", img: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=400", stock: "Available" },
-    { id: 6, weight: "1 KG", purity: "999 Purity", img: "https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&q=80&w=400", stock: "Available" },
+    { id: 5, weight: "100 GM", purity: "999 Purity", img: "/hundreadsilver.png", stock: "Available" },
+    { id: 6, weight: "1 KG", purity: "999 Purity", img: "silveronekg.png", stock: "Available" },
   ]
 };
 
