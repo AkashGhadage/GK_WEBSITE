@@ -182,7 +182,7 @@ const Home = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <img
-              src="/about.jpg"
+              src="/newabout.jpg"
               alt="Gurukrupa Gold Testing Lab"
               className="rounded-3xl shadow-lg h-[280px] md:h-[420px] w-full object-cover"
             />
