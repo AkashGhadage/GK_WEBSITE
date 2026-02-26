@@ -60,7 +60,7 @@ const benefits = [
   {
     icon: <FaShieldAlt className="text-2xl" />,
     title: "100% Non-Destructive",
-    desc: "No melting, cutting, or scratching. Your jewellery stays safe.",
+    desc: "No melting, cutting. Your jewellery stays safe.",
   },
   {
     icon: <FaRupeeSign className="text-2xl" />,
@@ -160,7 +160,7 @@ const Home = () => {
             { label: "Years Experience", val: "5+" },
             { label: "Testing Accuracy", val: "99.99%" },
             { label: "Purity Checks Done", val: "50,000+" },
-            { label: "Happy Clients Daily", val: "1000+" },
+            { label: "Happy Clients", val: "1000+" },
           ].map((stat, i) => (
             <div
               key={i}
@@ -187,7 +187,7 @@ const Home = () => {
               className="rounded-3xl shadow-lg h-[280px] md:h-[420px] w-full object-cover"
             />
             <div className="absolute -bottom-5 -right-5 bg-gradient-to-br from-[#D4AF37] to-[#AA771C] p-5 rounded-2xl hidden md:flex flex-col items-center shadow-xl">
-              <p className="text-black font-serif text-3xl font-bold">20+</p>
+              <p className="text-black font-serif text-3xl font-bold">5+</p>
               <p className="text-black/70 text-[10px] uppercase tracking-widest font-bold">
                 Years
               </p>
@@ -361,7 +361,7 @@ const Home = () => {
               </h3>
               <p className="text-gray-400 text-sm mt-2 max-w-md">
                 Visit our Karol Bagh lab and get your certified purity report in
-                under 5 minutes. Walk-ins welcome — no appointment needed.
+                under 5 minutes.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
