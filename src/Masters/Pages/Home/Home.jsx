@@ -54,7 +54,7 @@ const benefits = [
   },
   {
     icon: <FaAward className="text-2xl" />,
-    title: "20+ Years Expertise",
+    title: "5+ Years Expertise",
     desc: "Decades of experience testing and handling precious metals.",
   },
   {
@@ -74,13 +74,13 @@ const processSteps = [
     step: "01",
     icon: <Gem className="w-6 h-6" />,
     title: "Bring Your Jewellery",
-    desc: "Walk in with your gold, silver, or precious items. No appointment needed.",
+    desc: "Walk in with your gold, silver, or precious items.",
   },
   {
     step: "02",
     icon: <FileCheck className="w-6 h-6" />,
     title: "Instant XRF Testing",
-    desc: "We test purity in front of you using German XRF technology — zero damage.",
+    desc: "We test purity in using German XRF technology.",
   },
   {
     step: "03",
@@ -201,8 +201,8 @@ const Home = () => {
               Your Trusted Partner for Gold & Silver Verification
             </h2>
             <p className="text-gray-600 leading-relaxed text-base">
-              Located in Karol Bagh, New Delhi, Gurukrupa Gold is a certified
-              gold testing laboratory with over two decades of expertise. We
+              Located in Karol Bagh, New Delhi, Gurukrupa Gold is a most trusted
+              gold testing laboratory with over years of expertise. We
               combine traditional knowledge with advanced German XRF technology
               to deliver purity reports you can bank on — literally.
             </p>
@@ -215,7 +215,7 @@ const Home = () => {
               to="/about"
               className="inline-flex items-center gap-2 text-sm font-bold text-gray-900 border-b-2 border-[#CFA04F] pb-1 group hover:text-[#CFA04F] transition-colors"
             >
-              Learn Our Story
+              Our Story
               <FaArrowRight className="group-hover:translate-x-2 transition-transform text-[#CFA04F]" />
             </Link>
           </div>
@@ -233,8 +233,7 @@ const Home = () => {
               How Gold Testing Works
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm">
-              No appointments needed. Walk in, get tested, walk out with clarity.
-              The entire process takes under 10 minutes.
+              No appointment needed. Simply walk in, get your gold tested, and walk out with complete clarity — all in under 10 minutes.
             </p>
           </div>
 

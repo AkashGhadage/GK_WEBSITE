@@ -243,11 +243,11 @@ const Footer = () => {
                   </p>
                 </div>
 
-                {/* Description (NOW correctly under tagline) */}
+                {/* Description (NOW correctly under tagline)
                 <p className="text-gray-400 text-sm leading-relaxed mt-4 max-w-sm">
                   Your trusted partner in precision gold testing and premium
                   bullion investments.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
