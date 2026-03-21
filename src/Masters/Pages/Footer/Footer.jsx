@@ -123,10 +123,10 @@
 //                 <div className="flex gap-2.5 items-center">
 //                   <FaPhoneAlt className="text-[#CFA04F] shrink-0 text-sm" />
 //                   <a
-//                     href="tel:+919975796681"
+//                     href="tel:+917011675610"
 //                     className="text-gray-400 hover:text-white transition-colors tracking-widest"
 //                   >
-//                     +91 99757 96681
+//                     +91 70116 75610
 //                   </a>
 //                 </div>
 
@@ -366,10 +366,10 @@ const Footer = () => {
                 <div className="flex gap-3 items-center">
                   <FaPhoneAlt className="text-[#CFA04F] shrink-0" />
                   <a
-                    href="tel:+919975796681"
+                    href="tel:+917011675610"
                     className="hover:text-white transition-colors"
                   >
-                    +91 99757 96681
+                    +91 70116 75610
                   </a>
                 </div>
 

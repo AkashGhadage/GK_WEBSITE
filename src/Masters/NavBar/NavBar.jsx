@@ -164,10 +164,10 @@ export default function Navbar() {
             {/* Mobile CTA */}
             <div className="mt-6 pt-6 border-t border-white/10">
               <a
-                href="tel:+919975796681"
+                href="tel:+917011675610"
                 className="block w-full text-center py-3 bg-gradient-to-r from-[#D4AF37] to-[#AA771C] text-black font-bold rounded-full text-xs tracking-widest uppercase"
               >
-                Call: +91 99757 96681
+                Call: +91 70116 75610
               </a>
             </div>
           </div>

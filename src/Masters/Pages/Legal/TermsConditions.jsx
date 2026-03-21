@@ -216,8 +216,8 @@ const TermsConditions = () => {
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
-                <a href="tel:+919975796681" className="text-[#b79654] hover:underline">
-                  +91 99757 96681
+                <a href="tel:+917011675610" className="text-[#b79654] hover:underline">
+                  +91 70116 75610
                 </a>
               </p>
               <p>

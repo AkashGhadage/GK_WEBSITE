@@ -158,7 +158,7 @@ export default function GoldSilver() {
             <p className="text-gray-800 font-black text-base sm:text-lg">
               +91 9075516373<br className="sm:hidden" />
               <span className="hidden sm:inline"> , </span>
-              +91 9975796681
+              +91 7011675610
             </p>
             <p className="text-gray-500 text-sm">Call us for booking, bulk orders, or any inquiry regarding gold coins and gold bars.</p>
           </div>

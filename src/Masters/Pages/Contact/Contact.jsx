@@ -16,7 +16,7 @@ const Contact = () => {
   const [status, setStatus] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const whatsappNumber = "+919975796681";
+  const whatsappNumber = "+917011675610";
   const whatsappMessage =
     "Hello, I would like to get more information about your services.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(

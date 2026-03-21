@@ -18,7 +18,7 @@ const ComputerTouchPage = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const whatsappNumber = "+919975796681";
+  const whatsappNumber = "+917011675610";
   const whatsappMessage =
     "Hello, I want to know more about your gold and silver purity testing service.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;

@@ -69,20 +69,17 @@ const MetalTesting = () => {
               </span>
 
               <h1 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-6 leading-tight">
-                Metal Testing –
+                Precious Metal Testing –
                 <span className="text-[#b79654]"> Accurate & Reliable</span>
               </h1>
 
               <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-                We provide professional metal testing services to identify metal
-                type and purity with accuracy and honesty. Whether it is
-                jewellery, coins, bars, or mixed metal items, your valuables are
-                tested safely and transparently.
+               We provide professional testing to identify the exact metal type and purity with complete accuracy and transparency. Using advanced XRF technology, we test a wide range of precious and industrial metals including gold, silver, platinum, palladium, rhodium, and more.
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">
                 {[
-                  "Gold, Silver & Platinum Testing",
+                  "Gold, Silver, Platinum, Palladium Testing",
                   "Non-Destructive Process",
                   "Instant & Clear Results",
                   "Trusted by Jewellers & Customers",
@@ -142,7 +139,7 @@ const MetalTesting = () => {
           <div className="space-y-10">
             <div className="text-center space-y-4">
               <h2 className="text-2xl md:text-4xl font-serif font-bold text-gray-900">
-                Why Choose Our Metal Testing Service
+                Why Choose Our Precious Metal Testing Service
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
                 Trusted metal verification backed by experience, proper tools, and
@@ -219,7 +216,7 @@ const MetalTesting = () => {
 
       </div>
       {/* FAQ */}
-      <FAQSection title="Metal Testing FAQs" faqs={globalFaqs} className="bg-gray-100"/>
+      <FAQSection title="precious Metal Testing FAQs" faqs={globalFaqs} className="bg-gray-100"/>
     </div>
   );
 };

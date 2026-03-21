@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [dismissed, setDismissed] = useState(false);
 
-  const whatsappNumber = "+919975796681";
+  const whatsappNumber = "+917011675610";
   const whatsappMessage =
     "Hello, I'm interested in your gold testing services. Please share more details.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;

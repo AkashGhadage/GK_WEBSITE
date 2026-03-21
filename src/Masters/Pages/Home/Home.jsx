@@ -16,21 +16,21 @@ import GoogleReview from "../../Shared/GoogleReview";
 
 const services = [
   {
-    title: "Computer Touch (Tunch)",
+    title: "Computer Tunch",
     image: "/computer-touch.jpg",
     desc: "Advanced digital gold purity testing with precise XRF technology. Get instant computerised Tunch reports you can trust.",
     link: "/services/computer-touch",
   },
   {
-    title: "Metal Testing",
+    title: "Precious Metal Testing",
     image: "/metal-testing.jpg",
-    desc: "Professional assay services for gold, silver, and precious metals using scientific XRF analysis. Accurate to 0.01%.",
+    desc: "Advanced XRF testing for gold, silver, and rare metals like platinum, palladium, and rhodium, delivering precise purity and composition results in minutes, without any damage.",
     link: "/services/metal-testing",
   },
   {
-    title: "Jewellery Repair",
+    title: "Jewellery Restoration",
     image: "/jewellery-repair.jpg",
-    desc: "Expert restoration, laser soldering, ring resizing, and precious stone fixing for your cherished ornaments.",
+    desc: "Expert restoration, laser soldering, ring resizing, and precious stone fixing for your cherished ornaments. Every piece is handled with care to bring back its original strength, shine, and finish",
     link: "/services/jewellery-repair",
   },
   {
@@ -44,7 +44,7 @@ const services = [
 const benefits = [
   {
     icon: <FaBullseye className="text-2xl" />,
-    title: "99.9% Precision",
+    title: "99.99% Precision",
     desc: "German XRF technology for ultra-accurate purity results every time.",
   },
   {
@@ -135,7 +135,7 @@ const Home = () => {
             </Link>
 
             <a
-              href="https://wa.me/919975796681?text=Hello%2C%20I%27m%20interested%20in%20your%20gold%20testing%20services."
+              href="https://wa.me/917011675610?text=Hello%2C%20I%27m%20interested%20in%20your%20gold%20testing%20services."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 font-bold rounded-full hover:bg-white/20 transition-all flex items-center justify-center gap-2"
@@ -204,12 +204,11 @@ const Home = () => {
               Located in Karol Bagh, New Delhi, Gurukrupa Gold is a most trusted
               gold testing laboratory with over years of expertise. We
               combine traditional knowledge with advanced German XRF technology
-              to deliver purity reports you can bank on — literally.
+              to deliver purity reports you can rely on.
             </p>
             <p className="text-gray-600 leading-relaxed text-base">
               Whether you're buying new jewellery, selling old gold, taking a
-              gold loan, or verifying inherited pieces — we ensure every
-              milligram is accounted for with complete transparency.
+              gold loan, or verifying inherited pieces — we ensure total accuracy and complete transparency in every test.
             </p>
             <Link
               to="/about"
@@ -372,10 +371,10 @@ const Home = () => {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="tel:+919975796681"
+                href="tel:+917011675610"
                 className="border border-white/20 text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition-all whitespace-nowrap text-sm text-center"
               >
-                Call: +91 99757 96681
+                Call: +91 7011675610
               </a>
             </div>
           </div>
