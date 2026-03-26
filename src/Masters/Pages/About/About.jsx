@@ -52,8 +52,8 @@ const AboutPage = () => {
               <p className="text-gray-600 leading-relaxed text-lg">
                 We built this lab so that people have a place where their
                 gold is checked and repaired with the same seriousness they feel
-                for it. We use XRF technology — the gold standard in purity
-                testing — to ensure you leave with absolute certainty.
+                for it. We use XRF  technology, the gold standard in purity
+                testing, to ensure you leave with absolute certainty.
               </p>
               <div className="p-8 bg-gray-50 border-l-4 border-[#b79654] italic text-gray-700 text-lg">
                 "Jewellery is not just gold. It holds value, emotion, and trust.
