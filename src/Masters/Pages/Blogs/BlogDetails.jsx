@@ -57,7 +57,7 @@ const blogPosts = [
       "Understand key methods like hallmark inspection, touchstone tests, density checks, and advanced machine testing so you know how purity is verified.",
     readTime: "4 min read",
     date: "Dec 2025",
-    image: "/different_method.png",
+    image: "/puritygold.png",
   },
   {
     id: 5,
@@ -161,7 +161,7 @@ const BlogDetails = () => {
             {/* Title */}
 
             <h1
-              className="text-2xl md:text-3xl font-bold mb-4
+              className="text-2xl md:text-3xl font-serif font-bold mb-4
              text-[#b79654]"
             >
               {post.title}
@@ -186,7 +186,7 @@ const BlogDetails = () => {
                 <button
                   type="button"
                   onClick={handleCopyLink}
-                  className="flex items-center justify-center w-8 h-8 rounded-full bg-[#eeeeee] text-black hover:bg-[#e0e0e0] transition-colors"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-[#eeeeee] text-black hover:bg-[#e0e0e0] transition-colors"
                   aria-label="Copy link"
                 >
                   <FiLink className="w-4 h-4" />

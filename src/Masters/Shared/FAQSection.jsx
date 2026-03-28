@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { IoChevronDown } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const FAQSection = ({ title = "Frequently asked questions", faqs }) => {
+// 1. Add 'className' to the props destructured here
+const FAQSection = ({ title = "Frequently asked questions", faqs, className = "bg-gray-50" }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   if (!faqs || !faqs.length) return null;
 
   return (
-    <section className="w-full  bg-gray-100  md:py-16 mt-3">
+    // 2. Use a template literal to inject the className prop
+    <section className={`w-full py-16 md:py-20 mt-0 ${className}`}>
       <div className="max-w-4xl mx-auto px-4 md:px-8">
         
         {/* Elegant Heading Area */}

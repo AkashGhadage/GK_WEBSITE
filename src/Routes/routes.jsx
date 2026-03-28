@@ -11,6 +11,8 @@ import ComputerTouchPage from "../Masters/Pages/Services/ComputerTouchPage";
 import JewelleryRepair from "../Masters/Pages/Services/JewelleryRepair";
 import GoldSilverTesting from "../Masters/Pages/Services/GoldSilverTesting";
 import GoldSilver from "../Masters/Pages/gold_silver/GoldSilver";
+import TermsConditions from "../Masters/Pages/Legal/TermsConditions";
+import PrivacyPolicy from "../Masters/Pages/Legal/PrivacyPolicy";
 
 const AppRoutes = () => {
   return (
@@ -30,7 +32,12 @@ const AppRoutes = () => {
       <Route path="/services/computer-touch" element={<ComputerTouchPage />} />
       <Route path="/services/jewellery-repair" element={<JewelleryRepair />} />
       <Route path="/services/metal-testing" element={<MetalTesting />} />
-      <Route path="/services/Gold-Silver-Testing" element={<GoldSilverTesting/>} />
+      <Route path="/services/Gold-Silver-Testing" element={<GoldSilverTesting />} />
+      <Route path="/services/gold-&-silver-testing" element={<GoldSilverTesting />} />
+
+      {/* Legal Pages */}
+      <Route path="/terms" element={<TermsConditions />} />
+      <Route path="/privacy" element={<PrivacyPolicy />} />
     </Routes>
   );
 };

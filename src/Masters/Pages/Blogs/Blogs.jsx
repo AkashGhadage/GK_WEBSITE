@@ -46,7 +46,7 @@ const blogPosts = [
       "Understand key methods like hallmark inspection, touchstone tests, density checks, and advanced machine testing so you know how purity is verified.",
     readTime: "4 min read",
     date: "Dec 2025",
-    image: "/different_method.png",
+    image: "/puritygold.png",
   },
   {
     id: 5,
@@ -78,17 +78,18 @@ const Blogs = () => {
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-[11px] md:text-xs font-semibold tracking-[0.28em] text-amber-700 uppercase mb-3">
+          <p className="text-[11px] md:text-xs font-semibold tracking-[0.28em] text-[#b79654] uppercase mb-3">
             KNOWLEDGE IS POWER
           </p>
 
-          <h1 className="text-[24px] md:text-[30px] font-light uppercase tracking-[0.20em] text-gray-900 leading-snug">
-            Insights &amp; articles
+          <h1 className="text-[24px] md:text-[30px] font-serif font-bold uppercase tracking-[0.10em] text-gray-900 leading-snug">
+            Insights & Articles
           </h1>
 
           <p className="mt-4 text-xs md:text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            Stay updated with guides on gold testing, laser soldering, jewellery
-            care, and Ongoing Economic Education You Deserve.
+            Stay informed with expert guides on gold testing, laser soldering, jewellery
+            care, investment tips, and everything you need to make confident decisions
+            about your precious metals.
           </p>
         </div>
 
@@ -100,7 +101,7 @@ const Blogs = () => {
               to={`/blogs/${post.slug}`}
               className="block group"
             >
-              <article className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 overflow-hidden h-full cursor-pointer">
+              <article className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 overflow-hidden h-full cursor-pointer">
                 {/* Image */}
                 <div className="relative h-52 md:h-60 w-full overflow-hidden">
                   <img
@@ -113,7 +114,7 @@ const Blogs = () => {
 
                 {/* Content */}
                 <div className="p-5 md:p-6">
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <span className="inline-flex items-center rounded-full bg-[rgb(48,62,73)]/5 border border-[rgb(48,62,73)]/20 px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-[rgb(48,62,73)]">
                       {post.category}
                     </span>
@@ -124,7 +125,7 @@ const Blogs = () => {
 
                   {/* Title with custom hover color #b79654 */}
                   <h2
-                    className="text-base md:text-lg font-semibold leading-snug mb-2
+                    className="text-base md:text-lg font-serif font-semibold leading-snug mb-2
                                text-gray-900 transition-colors duration-200
                                group-hover:text-[#b79654]"
                   >

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import statesWithCities from "../../../../states-districts.json";
 import MapSection from "./ContactMap";
-import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,7 +16,7 @@ const Contact = () => {
   const [status, setStatus] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const whatsappNumber = "+919975796681";
+  const whatsappNumber = "+917011675610";
   const whatsappMessage =
     "Hello, I would like to get more information about your services.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -115,24 +114,23 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 from-amber-50 via-white to-rose-50/50 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="relative max-w-5xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-12">
-          <p className="text-[11px] md:text-xs font-semibold tracking-[0.28em] text-amber-700 uppercase mb-3">
+          <p className="text-[11px] md:text-xs font-semibold tracking-[0.28em] text-[#b79654] uppercase mb-3">
             Get in touch
           </p>
 
-          <h1 className="text-[24px] md:text-[30px] font-light uppercase tracking-[0.20em] text-gray-900 leading-snug">
-            Talk to your metal testing - laser soldering expert
+          <h1 className="text-[24px] md:text-[30px] font-serif font-bold uppercase tracking-[0.10em] text-gray-900 leading-snug">
+            Talk to Our Gold Testing Experts
           </h1>
 
           <p className="mt-4 text-xs md:text-sm text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            Connect with our laboratory experts for unmatched accuracy in gold
-            and silver purity analysis. Whether you require advanced XRF
-            computer gold & silver , high-precision laser soldering, or
-            professional jewelry restoration, we provide clear guidance and
-            master-level service for every piece.
+            Connect with our laboratory experts for gold & silver purity
+            analysis, advanced XRF testing, precision laser soldering, or
+            professional jewellery restoration. We provide honest guidance and
+            expert service for every piece.
           </p>
         </div>
 
@@ -236,7 +234,7 @@ const Contact = () => {
                   <label className="block text-sm font-semibold text-gray-900 mb-2 tracking-wide">
                     Services Needed <span className="text-red-500">*</span>
                   </label>
-                  <div className="grid grid-cols-2 gap-2.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {serviceOptions.map((service) => (
                       <label
                         key={service}
@@ -277,7 +275,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className={`w-full h-12 rounded-xl font-bold tracking-widest uppercase text-sm transition-all duration-300 
+                  className={`w-full h-12 rounded-full font-bold tracking-widest uppercase text-sm transition-all duration-300 
                     ${
                       isLoading
                         ? "bg-[#967a42] cursor-not-allowed text-white opacity-80"
@@ -318,15 +316,15 @@ const Contact = () => {
           {/* Image Section */}
           <div className="lg:order-2 h-full flex">
             <div className="relative h-[320px] md:h-[360px] lg:h-full w-full rounded-2xl overflow-hidden shadow-xl group">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/15 via-rose-500/10 to-amber-600/15"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#CFA04F]/10 via-[#b79654]/5 to-[#AA771C]/10"></div>
               <img
                 src="/contact-image.jpg"
                 alt="Premium Jewellery Craftsmanship"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute bottom-4 left-4 right-4">
-                <div className="bg-white/90 backdrop-blur-xl rounded-xl p-4 lg:p-5 border border-white/50 shadow-lg">
-                  <h3 className="text-lg lg:text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#b79654] to-rose-600 mb-2">
+                <div className="bg-white/90 backdrop-blur-xl rounded-xl p-3 md:p-4 lg:p-5 border border-white/50 shadow-lg">
+                  <h3 className="text-lg lg:text-xl font-serif font-black text-[#b79654] mb-2">
                     Visit Our Lab
                   </h3>
                   <p className="text-sm text-gray-700 leading-relaxed mb-3">
@@ -353,25 +351,15 @@ const Contact = () => {
           <div className="pointer-events-auto rounded-2xl bg-white shadow-2xl border border-gray-200 px-6 py-4 flex items-center gap-3 animate-[fadeIn_0.2s_ease-out]">
             <div
               className={`flex h-8 w-8 items-center justify-center rounded-full text-white text-sm font-bold ${
-                status.includes("✅") ? "bg-emerald-500" : "bg-rose-500"
+                status.includes("Thank you") ? "bg-emerald-500" : "bg-rose-500"
               }`}
             >
-              {status.includes("✅") ? "✓" : "!"}
+              {status.includes("Thank you") ? "✓" : "!"}
             </div>
             <p className="text-sm md:text-base text-gray-800">{status}</p>
           </div>
         </div>
       )}
-
-      {/* ✅ FLOATING WHATSAPP BUTTON ADDED */}
-      <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all"
-      >
-        <FaWhatsapp className="w-7 h-7 text-white" />
-      </a>
 
       <style jsx>{`
         @keyframes fadeIn {
