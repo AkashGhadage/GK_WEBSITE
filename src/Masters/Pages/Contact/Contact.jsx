@@ -24,7 +24,7 @@ const Contact = () => {
   )}`;
 
   const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbxC3fzT_HAJNQkUyAkSkJ_fH7_vlPTrN7KExXuvcebOcPQgEl3FfOe12NPJ1E5XJJMs/exec";
+    "https://script.google.com/macros/s/AKfycbxyLMMD7oVPKFON3GLkTRlVLSt13hdFSsROfkA_C6rmQ1txN_fpaNnCz4wFW7mVnUgkwg/exec";
 
   const serviceOptions = [
     "Computer Touch",
