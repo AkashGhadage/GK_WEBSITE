@@ -29,7 +29,7 @@ const services = [
   },
   {
     title: "Jewellery Restoration",
-    image: "/jewellery-repair.jpg",
+    image: "/jewellary_repair.png",
     desc: "Expert restoration, laser soldering, ring resizing, and precious stone fixing for your cherished ornaments. Every piece is handled with care to bring back its original strength, shine, and finish",
     link: "/services/jewellery-repair",
   },
