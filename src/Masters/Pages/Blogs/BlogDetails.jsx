@@ -5,7 +5,7 @@ import { useParams, Link, useLocation } from "react-router-dom";
 import { FiLink } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import LaserSolderingVsTraditional from "./content/LaserSolderingVsTraditional";
-import WhyHallmarkTesting from "./Content/WhyHallmarkTesting";
+import WhyHallmarkTesting from "./content/WhyHallmarkTesting";
 import DifferentMethodsToCheckGoldPurity from "./content/DifferentMethodsToCheckGoldPurity";
 import SellingOldGoldInEmergency from "./content/SellingOldGoldInEmergency";
 import GoldAsInvestmentJewelleryCoinsBars from "./content/GoldAsInvestmentJewelleryCoinsBars";
