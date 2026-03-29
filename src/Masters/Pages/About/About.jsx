@@ -32,9 +32,7 @@ const AboutPage = () => {
               <span className="italic">Purity.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed">
-              At Gurukrupa, we understand that jewellery is more than just
-              metal — it is a vessel for your most cherished memories and
-              hard-earned trust.
+              At Gurukrupa, we understand that jewellery is more than just metal. It carries your most cherished memories and the trust you’ve built over time. Every piece is handled with the highest level of accuracy, care, and transparency, because it deserves nothing less.
             </p>
           </div>
         </div>

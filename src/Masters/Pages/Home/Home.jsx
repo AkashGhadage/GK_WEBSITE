@@ -36,7 +36,7 @@ const services = [
   {
     title: "Gold & Silver Purity Testing",
     image: "/goldpurity_1.png",
-    desc: "Non-destructive purity testing for gold & silver jewellery, coins, and bars. Certified reports for loans & transactions.",
+    desc: "Non-destructive purity testing for gold & silver jewellery, coins, and bars. reports for loans & transactions.",
     link: "/services/Gold-Silver-Testing",
   },
 ];
@@ -44,28 +44,28 @@ const services = [
 const benefits = [
   {
     icon: <FaBullseye className="text-2xl" />,
-    title: "99.99% Precision",
-    desc: "German XRF technology for ultra-accurate purity results every time.",
+    title: "99.99 % Precision",
+    desc: "We ensure highly accurate purity results using advanced German XRF technology.",
   },
   {
     icon: <FaClock className="text-2xl" />,
     title: "5 Minute Reports",
-    desc: "Walk in and get certified purity reports in under 5 minutes.",
+    desc: "We deliver your purity report within minutes, saving you time and effort.",
   },
   {
     icon: <FaAward className="text-2xl" />,
-    title: "5+ Years Expertise",
-    desc: "Decades of experience testing and handling precious metals.",
+    title: "5 + Years Expertise",
+    desc: "We bring years of experience in handling and testing precious metals with care.",
   },
   {
     icon: <FaShieldAlt className="text-2xl" />,
     title: "100% Non-Destructive",
-    desc: "No melting, cutting. Your jewellery stays safe.",
+    desc: "We guarantee safe testing with no melting or cutting of your jewellery.",
   },
   {
     icon: <FaRupeeSign className="text-2xl" />,
     title: "Transparent Pricing",
-    desc: "Clear per-piece charges. No hidden fees. Know the cost upfront.",
+    desc: "We offer clear, upfront pricing with no hidden charges.",
   },
 ];
 
@@ -85,7 +85,7 @@ const processSteps = [
   {
     step: "03",
     icon: <Phone className="w-6 h-6" />,
-    title: "Get Certified Report",
+    title: "Get Report",
     desc: "Receive a detailed purity certificate with karat, percentage & weight details.",
   },
 ];
@@ -121,8 +121,8 @@ const Home = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-            Delhi's most trusted gold testing lab. Get certified XRF purity
-            reports in minutes — no melting, no damage, no doubt.
+            Delhi’s most trusted gold & silver purity testing lab.
+            We offer precise purity testing using advanced XRF technology, with reports delivered in minutes, completely non-destructive.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -157,10 +157,10 @@ const Home = () => {
       <section className="relative z-30 -mt-16 max-w-4xl mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-100">
           {[
-            { label: "Years Experience", val: "5+" },
-            { label: "Testing Accuracy", val: "99.99%" },
-            { label: "Purity Checks Done", val: "50,000+" },
-            { label: "Happy Clients", val: "1000+" },
+            { label: "Years Experience", val: "5 +" },
+            { label: "Testing Accuracy", val: "99.99 %" },
+            { label: "Purity Checks Done", val: "50,000 +" },
+            { label: "Happy Clients", val: "1000 +" },
           ].map((stat, i) => (
             <div
               key={i}
@@ -187,7 +187,7 @@ const Home = () => {
               className="rounded-3xl shadow-lg h-[280px] md:h-[420px] w-full object-cover"
             />
             <div className="absolute -bottom-5 -right-5 bg-gradient-to-br from-[#D4AF37] to-[#AA771C] p-5 rounded-2xl hidden md:flex flex-col items-center shadow-xl">
-              <p className="text-black font-serif text-3xl font-bold">5+</p>
+              <p className="text-black font-serif text-3xl font-bold">5 +</p>
               <p className="text-black/70 text-[10px] uppercase tracking-widest font-bold">
                 Years
               </p>
@@ -201,14 +201,10 @@ const Home = () => {
               Your Trusted Partner for Gold & Silver Verification
             </h2>
             <p className="text-gray-600 leading-relaxed text-base">
-              Located in Karol Bagh, New Delhi, Gurukrupa Gold is a most trusted
-              gold testing laboratory with over years of expertise. We
-              combine traditional knowledge with advanced German XRF technology
-              to deliver purity reports you can rely on.
+              Based in Karol Bagh, New Delhi, Gurukrupa Gold is a trusted name in gold and silver purity testing, built on years of experience and customer confidence. Using advanced German XRF technology, we deliver precise, purity reports with complete reliability.
             </p>
             <p className="text-gray-600 leading-relaxed text-base">
-              Whether you're buying new jewellery, selling old gold, taking a
-              gold loan, or verifying inherited pieces — we ensure total accuracy and complete transparency in every test.
+              Whether you're buying new jewellery, selling old gold, taking a gold loan, or verifying inherited pieces, we ensure complete accuracy and full transparency in every test, helping you understand the true value of your gold and avoid any loss.
             </p>
             <Link
               to="/about"
@@ -232,7 +228,7 @@ const Home = () => {
               How Gold Testing Works
             </h2>
             <p className="text-gray-500 mt-3 max-w-xl mx-auto text-sm">
-              No appointment needed. Simply walk in, get your gold tested, and walk out with complete clarity — all in under 10 minutes.
+              No appointment needed. Simply walk in, get your gold tested, and walk out with complete clarity in 10 minutes.
             </p>
           </div>
 
@@ -278,8 +274,7 @@ const Home = () => {
               Excellence in Every Service
             </h2>
             <p className="text-gray-400 mt-3 max-w-xl mx-auto text-sm">
-              From purity testing to jewellery restoration — every service is
-              backed by technology, expertise, and a commitment to honesty.
+              From purity testing to jewellery restoration, every service is backed by advanced technology, expert craftsmanship, and a commitment to complete transparency.
             </p>
           </div>
 
@@ -358,8 +353,7 @@ const Home = () => {
                 Ready to verify your gold?
               </h3>
               <p className="text-gray-400 text-sm mt-2 max-w-md">
-                Visit our Karol Bagh lab and get your certified purity report in
-                under 5 minutes.
+                Visit our Karol Bagh lab and get your purity report in just a few minutes with complete accuracy and transparency.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -382,7 +376,7 @@ const Home = () => {
       </section>
 
       {/* ═══════════════════════════════ FAQ ═══════════════════════════════ */}
-      <FAQSection title="Common Questions" faqs={globalFaqs} />
+      <FAQSection title="Frequently Asked Questions" faqs={globalFaqs} />
     </div>
   );
 };

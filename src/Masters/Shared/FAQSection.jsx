@@ -26,7 +26,7 @@ const FAQSection = ({ title = "Frequently asked questions", faqs, className = "b
             {title}
           </h2>
           <p className="text-gray-500 text-sm md:text-base max-w-xl mx-auto leading-relaxed">
-            Everything you need to know about our non-destructive testing process and reports.
+            Find answers to our most frequently asked questions.
           </p>
         </div>
 
