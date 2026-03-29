@@ -92,9 +92,11 @@ const processSteps = [
 
 const Home = () => {
   return (
-    <div className="min-h-screen font-sans text-gray-900 antialiased bg-white">
+    /* Added overflow-x-hidden here to prevent horizontal scrolling */
+    <div className="min-h-screen font-sans text-gray-900 antialiased bg-white overflow-x-hidden w-full">
+      
       {/* ═══════════════════════════════════ HERO ═══════════════════════════════════ */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden w-full">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[rgb(23,28,32)] z-10" />
           <img
