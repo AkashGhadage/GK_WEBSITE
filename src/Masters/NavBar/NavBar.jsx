@@ -99,8 +99,8 @@ export default function Navbar() {
 
         {/* Right: Security Badge (Desktop) & Mobile Toggle */}
         <div className="flex items-center gap-3">
-          
-          
+
+
           {/* Mobile Menu Button */}
           <button onClick={toggleMobileMenu} className="md:hidden text-white p-2">
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -108,70 +108,183 @@ export default function Navbar() {
         </div>
       </div>
 
+
       {/* Mobile Side Menu Overlay */}
-      <div className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[2000] transition-opacity duration-300 md:hidden ${isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`} onClick={toggleMobileMenu}>
-        <div className={`absolute right-0 top-0 h-full w-[280px] bg-[rgb(23,28,32)] shadow-2xl transition-transform duration-300 transform ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}`} onClick={(e) => e.stopPropagation()}>
-          {/* Close button */}
-          <div className="flex justify-end p-4">
-            <button onClick={toggleMobileMenu} className="text-white/60 hover:text-white p-1">
+
+      <div
+
+        className={`fixed inset-0 z-[2000] md:hidden transition-all duration-500 ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
+
+          }`}
+
+      >
+
+        {/* 1. THE DARK OVERLAY: This solves the "White on White" issue */}
+
+        <div
+
+          className="absolute inset-0 bg-black/60 backdrop-blur-md transition-opacity duration-500"
+
+          onClick={toggleMobileMenu}
+
+        />
+
+
+
+        {/* 2. THE DRAWER: We use a slightly darker tint here for readability */}
+
+        <div className={`absolute right-0 top-0 h-full w-[280px] bg-black/80 backdrop-blur-2xl border-l border-white/10 shadow-2xl transition-transform duration-500 ease-out flex flex-col ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+
+          }`}>
+
+
+
+          {/* Close Button Area */}
+
+          <div className="flex justify-end p-6">
+
+            <button onClick={toggleMobileMenu} className="text-white/70 hover:text-[#CFA04F] transition-colors">
+
               <X size={24} />
+
             </button>
+
           </div>
-          <div className="flex flex-col px-6 gap-1">
+
+
+
+          {/* Navigation List */}
+
+          <div className="flex flex-col px-8 space-y-1  bg-black/80">
+
             {NavbarComponents.map((item) => {
-              if (item.name === "Services") {
+
+              const isServices = item.name === "Services";
+
+
+
+              if (isServices) {
+
                 return (
-                  <div key={item.name}>
+
+                  <div key={item.name} className="py-2">
+
                     <button
+
                       onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                      className={`flex items-center justify-between w-full py-3 text-sm font-semibold tracking-widest uppercase ${mobileServicesOpen ? "text-[#CFA04F]" : "text-white"}`}
+
+                      className={`flex items-center justify-between w-full py-3 text-[13px] font-bold tracking-[0.15em] uppercase transition-colors ${mobileServicesOpen ? "text-[#CFA04F]" : "text-white"
+
+                        }`}
+
                     >
-                      Services
+
+                      {item.name}
+
                       <ChevronDown size={16} className={`transition-transform duration-300 ${mobileServicesOpen ? "rotate-180" : ""}`} />
+
                     </button>
-                    <div className={`overflow-hidden transition-all duration-300 ${mobileServicesOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}>
-                      <div className="pl-4 pb-2 space-y-1 border-l border-[#CFA04F]/30 ml-2">
+
+
+
+                    {/* Submenu with a slight background tint to separate it */}
+
+                    <div className={`overflow-hidden transition-all duration-300 bg-white/5 rounded-lg ${mobileServicesOpen ? "max-h-64 mt-2 mb-4 opacity-100" : "max-h-0 opacity-0"
+
+                      }`}>
+
+                      <div className="p-4 flex flex-col gap-4">
+
                         {["Computer Touch", "Jewellery Repair", "Metal Testing", "Gold & Silver Testing"].map((sub) => (
+
                           <button
+
                             key={sub}
+
                             onClick={() => {
+
                               navigate(`/services/${sub.toLowerCase().replace(/ /g, '-').replace('&', '').replace('--', '-')}`);
+
                               setIsMobileMenuOpen(false);
-                              setMobileServicesOpen(false);
+
                             }}
-                            className="block w-full text-left py-2 text-xs tracking-widest text-gray-400 hover:text-[#CFA04F] transition-colors uppercase"
+
+                            className="text-left text-[11px] tracking-widest text-white/60 hover:text-[#CFA04F] uppercase transition-colors"
+
                           >
+
                             {sub}
+
                           </button>
+
                         ))}
+
                       </div>
+
                     </div>
+
                   </div>
+
                 );
+
               }
+
+
+
               return (
+
                 <NavLink
+
                   key={item.path}
+
                   to={item.path}
+
                   onClick={toggleMobileMenu}
-                  className={({ isActive }) => `py-3 text-sm font-semibold tracking-widest uppercase ${isActive ? "text-[#CFA04F]" : "text-white"}`}
+
+                  className={({ isActive }) => `
+
+              py-4 text-[13px] font-bold tracking-[0.15em] uppercase border-b border-white/5 transition-colors
+
+              ${isActive ? "text-[#CFA04F]" : "text-white/90"}
+
+            `}
+
                 >
+
                   {item.name}
+
                 </NavLink>
+
               );
+
             })}
 
-            {/* Mobile CTA */}
-            <div className="mt-6 pt-6 border-t border-white/10">
+
+
+            {/* Call CTA - High visibility */}
+
+            <div className="py-4">
+
               <a
+
                 href="tel:+917011675610"
-                className="block w-full text-center py-3 bg-gradient-to-r from-[#D4AF37] to-[#AA771C] text-black font-bold rounded-full text-xs tracking-widest uppercase"
+
+                className="flex flex-col items-center justify-center py-4 bg-[#CFA04F] text-black rounded-sm shadow-[0_0_20px_rgba(207,160,79,0.3)] transition-transform active:scale-95"
+
               >
-                Call: +91 70116 75610
+
+                <span className="text-[10px] font-black tracking-widest uppercase">Call Us </span>
+
+                <span className="text-[12px] font-bold">+91 70116 75610</span>
+
               </a>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
     </header>
   );
